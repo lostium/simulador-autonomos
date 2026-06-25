@@ -123,6 +123,7 @@ Las compilaciones localizadas se exportarán en carpetas independientes bajo `di
 
 1. **100% Local**: No se transmiten datos financieros ni personales a ningún servidor externo. Todo el proceso de cálculo ocurre dentro del navegador del usuario. El historial de simulaciones se guarda de forma segura únicamente en el `localStorage` local.
 2. **Carácter Informativo**: Este simulador ofrece una estimación de acuerdo a la normativa general del IRPF y Seguridad Social para 2025. **No reemplaza el criterio y asesoramiento personalizado de un gestor profesional o asesor fiscal.**
+3. **Bajo su cuenta y riesgo**: Use por su cuenta y riesgo la aplicación. Lostium no se responsabiliza de fallos o errores de cálculo; es simplemente un experimento para uso interno que hemos dejado abierto para que otras personas lo deriven.
 
 ---
 
