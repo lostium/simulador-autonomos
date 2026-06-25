@@ -1,0 +1,1823 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Simulador Renta 2025 - Tablas Detalladas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f0f4f8;
+      }
+      .input-label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #475569;
+        margin-bottom: 0.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .input-field {
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 0.5rem;
+        background-color: white;
+        transition: all 0.2s;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #1e293b;
+      }
+      .input-field:focus {
+        border-color: #3b82f6;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+      .card {
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+          0 2px 4px -1px rgba(0, 0, 0, 0.02);
+      }
+
+      /* Custom Toggle */
+      .toggle-checkbox:checked {
+        right: 0;
+        border-color: #3b82f6;
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #3b82f6;
+      }
+      .dot {
+        top: 2px;
+        left: 2px;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      input:checked ~ .dot {
+        transform: translateX(100%);
+        background-color: white;
+      }
+      input:checked + div {
+        background-color: #3b82f6;
+      }
+
+      /* Table Styles */
+      .bracket-table th {
+        background-color: #f8fafc;
+        color: #64748b;
+        font-weight: 600;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        padding: 0.5rem 0.4rem;
+        text-align: right;
+        letter-spacing: 0.05em;
+        border-bottom: 2px solid #f1f5f9;
+      }
+      .bracket-table th:first-child {
+        text-align: left;
+      }
+      .bracket-table td {
+        padding: 0.4rem;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 0.75rem;
+        text-align: right;
+        color: #334155;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+      .bracket-table td:first-child {
+        text-align: left;
+        font-weight: 500;
+        white-space: normal;
+        min-width: 100px;
+      }
+      .bracket-table tr:last-child td {
+        border-bottom: none;
+      }
+      .bracket-row-active {
+        background-color: #eff6ff;
+      }
+
+      @media (min-width: 1280px) {
+        .bracket-table td {
+          font-size: 0.7rem;
+          padding: 0.35rem 0.4rem;
+        }
+        .bracket-table th {
+          font-size: 0.6rem;
+        }
+      }
+
+      /* Step Navigation Styles */
+      .step-btn {
+        @apply px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200;
+      }
+      .step-btn.active {
+        background-color: white;
+        color: #3b82f6;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+      }
+      .step-btn.inactive {
+        color: #64748b;
+        background-color: transparent;
+      }
+      .step-btn.inactive:hover {
+        color: #334155;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body class="text-slate-800">
+    <!-- Header -->
+    <header
+      class="bg-slate-900 text-white py-6 px-4 shadow-md sticky top-0 z-30"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <h1 class="text-2xl font-bold flex items-center gap-3">
+          <span class="material-symbols-outlined text-3xl text-blue-400"
+            >table_chart</span
+          >
+          <span>Simulador Renta <span class="text-blue-400">2025</span></span>
+        </h1>
+        <div class="flex items-center gap-4 text-sm">
+          <div
+            class="hidden lg:flex items-center gap-6 px-4 py-1.5 bg-slate-800/50 rounded-xl border border-slate-700/50 backdrop-blur-sm"
+          >
+            <div class="flex flex-col">
+              <span
+                class="text-[10px] text-slate-500 uppercase font-bold leading-none mb-1"
+                >Rendimiento Neto</span
+              >
+              <span class="font-mono font-bold text-blue-400" id="topNet"
+                >0&nbsp;€</span
+              >
+            </div>
+            <div class="w-px h-6 bg-slate-700"></div>
+            <div class="flex flex-col">
+              <span
+                class="text-[10px] text-slate-500 uppercase font-bold leading-none mb-1"
+                >Resultado</span
+              >
+              <span class="font-mono font-bold" id="topBalance">0&nbsp;€</span>
+            </div>
+          </div>
+          <div
+            class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700"
+          >
+            <span class="text-slate-400">Régimen:</span>
+            <span class="font-bold text-white">Directa Simplificada</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 lg:p-6">
+      
+      <!-- MAIN NAVIGATION (STEPS) -->
+      <div class="flex justify-center mb-8">
+        <div class="bg-slate-200 p-1 rounded-xl inline-flex shadow-inner">
+          <button onclick="setStep(1)" id="nav-step-1" class="px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200 bg-white text-blue-600 shadow-sm">
+            1. Datos
+          </button>
+          <button onclick="setStep(2)" id="nav-step-2" class="px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200 text-slate-500 hover:text-slate-700">
+            2. Resultados
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 1: INPUTS -->
+      <div id="step-1-container" class="max-w-5xl mx-auto space-y-6 animate-fade-in">
+        
+        <!-- SAVED SIMULATIONS (In Step 1 for quick load) -->
+        <div id="savedSimsCardStep1" class="card p-4 border border-slate-200 bg-slate-50/50 hidden">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="text-sm font-bold text-slate-700 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-slate-500 text-lg">history</span>
+                    Cargar Simulación Guardada
+                </h3>
+                <div class="flex gap-2">
+                    <button onclick="exportToJSON()" class="text-slate-400 hover:text-blue-600" title="Exportar"><span class="material-symbols-outlined text-sm">download</span></button>
+                    <button onclick="triggerImport()" class="text-slate-400 hover:text-emerald-600" title="Importar"><span class="material-symbols-outlined text-sm">upload</span></button>
+                </div>
+            </div>
+            <div id="savedSimsListStep1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <!-- Simulations will be listed here -->
+            </div>
+        </div>
+
+        <!-- 1. ECONOMICS (Full Width) -->
+        <div class="card p-5 border-t-4 border-blue-500">
+          <h2
+            class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined text-blue-500">euro</span>
+            Datos Económicos
+          </h2>
+
+          <div class="space-y-4">
+            <div>
+              <label class="input-label" for="annualInvoice"
+                >Total Facturado (Base)</label
+              >
+              <div class="relative">
+                <input
+                  type="text"
+                  id="annualInvoice"
+                  placeholder="Ej. 45.000"
+                  class="input-field pl-8 font-bold text-lg"
+                  oninput="calculate()"
+                  onblur="this.value = formatV(this.value)"
+                  onfocus="this.value = this.value.replace(/\./g, '')"
+                />
+                <span
+                  class="absolute left-3 top-2 text-slate-400 material-symbols-outlined text-sm pt-1"
+                  >payments</span
+                >
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="input-label" for="annualExpenses"
+                  >Gastos Anuales</label
+                >
+                <input
+                  type="text"
+                  id="annualExpenses"
+                  placeholder="Ej. 2.000"
+                  class="input-field"
+                  oninput="calculate()"
+                  onblur="this.value = formatV(this.value)"
+                  onfocus="this.value = this.value.replace(/\./g, '')"
+                />
+              </div>
+              <div>
+                <label class="input-label" for="annualQuota"
+                  >Cuota Autónomos</label
+                >
+                <input
+                  type="text"
+                  id="annualQuota"
+                  placeholder="Auto"
+                  class="input-field"
+                  oninput="calculate()"
+                  onblur="this.value = formatV(this.value)"
+                  onfocus="this.value = this.value.replace(/\./g, '')"
+                />
+                <div class="text-[10px] text-slate-400 mt-1 text-right">
+                  Dejar vacío para auto-cálculo
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-slate-100 mt-2">
+              <label class="input-label mb-2 text-blue-600"
+                >Desglose de Gastos (Opcional)</label
+              >
+              <div class="grid grid-cols-12 gap-2 mb-2">
+                <div class="col-span-12 md:col-span-5">
+                  <input
+                    type="text"
+                    id="newExpConcept"
+                    placeholder="Concepto"
+                    class="input-field text-xs"
+                  />
+                </div>
+                <div class="col-span-6 md:col-span-3">
+                  <input
+                    type="text"
+                    id="newExpAmount"
+                    placeholder="€"
+                    class="input-field text-xs"
+                    onfocus="this.value = this.value.replace(/\./g, '')"
+                  />
+                </div>
+                <div class="col-span-6 md:col-span-4 flex gap-1">
+                  <select id="newExpFreq" class="input-field text-xs px-1">
+                    <option value="1">Anual</option>
+                    <option value="12">Mensual</option>
+                  </select>
+                  <button
+                    onclick="addExpense()"
+                    class="bg-blue-500 hover:bg-blue-600 text-white rounded px-2 transition-colors flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined text-base">add</span>
+                  </button>
+                </div>
+              </div>
+
+              <div id="expensesListContainer" class="hidden mb-2">
+                <div
+                  class="bg-slate-50 rounded border border-slate-200 overflow-hidden"
+                >
+                  <table class="w-full text-xs">
+                    <tbody id="expensesListBody"></tbody>
+                  </table>
+                </div>
+                <div
+                  class="flex justify-between items-center text-xs text-slate-500 mt-1 px-1"
+                >
+                  <span>Total Detallado:</span>
+                  <span class="font-bold text-slate-700" id="expensesSum"
+                    >0,00 €</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-slate-100">
+              <label class="flex items-center cursor-pointer select-none">
+                <div class="relative">
+                  <input
+                    type="checkbox"
+                    id="diffJustToggle"
+                    class="sr-only"
+                    checked=""
+                    onchange="calculate()"
+                  />
+                  <div
+                    class="w-9 h-5 bg-slate-200 rounded-full shadow-inner transition-colors"
+                  ></div>
+                  <div
+                    class="dot absolute w-4 h-4 bg-white rounded-full shadow top-0.5 left-0.5"
+                  ></div>
+                </div>
+                <span class="ml-3 text-sm font-medium text-slate-600"
+                  >Aplicar 5% Gastos Difícil Justif.</span
+                >
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRID FOR OTHER CARDS (2 Columns) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- 2. PROFILE -->
+            <div class="card p-5 border-t-4 border-emerald-500">
+              <h2
+                class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-emerald-500"
+                  >person_pin</span
+                >
+                Perfil Fiscal
+              </h2>
+
+              <div class="space-y-4">
+                <div>
+                  <label class="input-label">Comunidad Autónoma</label>
+                  <select
+                    id="region"
+                    class="input-field bg-emerald-50/50 border-emerald-200 text-emerald-900"
+                    onchange="calculate()"
+                  >
+                    <option value="common">Territorio Común (General)</option>
+                    <option value="madrid">Comunidad de Madrid</option>
+                    <option value="andalucia">Andalucía</option>
+                    <option value="cataluna">Cataluña</option>
+                    <option value="valencia">Comunidad Valenciana</option>
+                    <option value="galicia">Galicia</option>
+                    <option value="murcia">Región de Murcia</option>
+                    <option value="canarias">Canarias</option>
+                  </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label class="input-label">Edad</label>
+                    <select id="age" class="input-field" onchange="calculate()">
+                      <option value="under65">Menor 65</option>
+                      <option value="over65">Mayor 65</option>
+                      <option value="over75">Mayor 75</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="input-label">Hijos (&lt;25)</label>
+                    <select
+                      id="children"
+                      class="input-field"
+                      onchange="calculate()"
+                    >
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. SEGURO MÉDICO -->
+            <div class="card p-5 border-t-4 border-cyan-500">
+              <h2
+                class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-cyan-500"
+                  >medical_services</span
+                >
+                Seguro Médico
+              </h2>
+
+              <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4 items-end">
+                  <div>
+                    <label class="input-label" for="healthInsurance"
+                      >Gastos Anuales (€)</label
+                    >
+                    <input
+                      type="text"
+                      id="healthInsurance"
+                      placeholder="Ej. 600"
+                      class="input-field"
+                      oninput="calculate()"
+                      onblur="this.value = formatV(this.value)"
+                      onfocus="this.value = this.value.split('.').join('')"
+                    />
+                  </div>
+                  <div>
+                    <label class="input-label" for="healthPeople"
+                      >Nº Asegurados</label
+                    >
+                    <input
+                      type="number"
+                      id="healthPeople"
+                      value="1"
+                      min="1"
+                      class="input-field"
+                      oninput="calculate()"
+                    />
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 leading-tight">
+                  Deducible hasta 500€ por persona (titular, cónyuge e hijos &lt; 25 años).
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. PLANES DE PENSIONES -->
+            <div class="card p-5 border-t-4 border-orange-500">
+              <h2
+                class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-orange-500"
+                  >savings</span
+                >
+                Planes de Pensiones
+              </h2>
+
+              <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4 items-end">
+                  <div>
+                    <label class="input-label" for="personalPension"
+                      >P. Individual</label
+                    >
+                    <input
+                      type="text"
+                      id="personalPension"
+                      placeholder="Máx 1.500"
+                      class="input-field"
+                      oninput="calculate()"
+                      onblur="this.value = formatV(this.value)"
+                      onfocus="this.value = this.value.split('.').join('')"
+                    />
+                  </div>
+                  <div>
+                    <label class="input-label" for="autonomoPension"
+                      >P. Autónomo</label
+                    >
+                    <input
+                      type="text"
+                      id="autonomoPension"
+                      placeholder="Máx 4.250"
+                      class="input-field"
+                      oninput="calculate()"
+                      onblur="this.value = formatV(this.value)"
+                      onfocus="this.value = this.value.split('.').join('')"
+                    />
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 leading-tight">
+                  Límites: 1.500€ (indiv.) + 4.250€ (empleo). Máx 30% Rend. Neto.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5. DONACIONES -->
+            <div class="card p-5 border-t-4 border-rose-500">
+              <h2
+                class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-rose-500"
+                  >volunteer_activism</span
+                >
+                Donaciones ONG
+              </h2>
+
+              <div class="space-y-4">
+                <div>
+                  <label class="input-label" for="ngoDonations"
+                    >Importe Anual (€)</label
+                  >
+                  <div class="relative">
+                    <input
+                      type="text"
+                      id="ngoDonations"
+                      placeholder="Ej. 300"
+                      class="input-field"
+                      oninput="calculate()"
+                      onblur="this.value = formatV(this.value)"
+                      onfocus="this.value = this.value.split('.').join('')"
+                    />
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 leading-tight">
+                  Deducción: 80% de los primeros 250€ y 40% del resto.
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <!-- ACTION BUTTON -->
+        <button onclick="setStep(2); window.scrollTo({top:0, behavior:'smooth'})" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all transform hover:scale-[1.01] flex items-center justify-center gap-3">
+          <span>Ver Resultados</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+
+      </div>
+
+      <!-- STEP 2: RESULTS -->
+      <div id="step-2-container" class="hidden space-y-6 animate-fade-in">
+        
+        <!-- TOP: SUMMARY CARD & ACTIONS -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- SUMMARY CARD -->
+            <div class="lg:col-span-2 card bg-slate-800 text-white p-6 shadow-xl relative overflow-hidden">
+                <div class="absolute -right-6 -top-6 w-24 h-24 bg-blue-500 rounded-full opacity-20 blur-xl"></div>
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
+                    Resultado Final
+                </h3>
+
+                <div class="flex justify-between items-end mb-4">
+                    <div>
+                    <div class="text-3xl font-black text-emerald-400" id="finalBalance">
+                        0&nbsp;€
+                    </div>
+                    <div class="text-sm font-bold text-emerald-200 mt-1 uppercase bg-emerald-900/30 px-2 py-1 rounded inline-block" id="finalBalanceLabel">
+                        A DEVOLVER
+                    </div>
+                    </div>
+                    <div class="text-right">
+                    <div class="text-xs text-slate-400 uppercase">Cuota Total</div>
+                    <div class="text-xl font-bold text-white" id="totalTaxDisplay">
+                        0&nbsp;€
+                    </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-700 pt-3 flex justify-between text-xs text-slate-400">
+                    <span>Retenciones (15%): <span class="text-blue-300" id="withholdingsDisplay">-0&nbsp;€</span></span>
+                    <span>Tipo Medio: <span class="text-yellow-300" id="effectiveRateDisplay">0%</span></span>
+                </div>
+
+                <!-- Detailed Breakdown -->
+                <div class="mt-4 space-y-1.5 border-t border-slate-700/50 pt-4">
+                    <div class="flex justify-between text-[11px]">
+                    <span class="text-slate-500 italic">Reducción Seguro Médico</span>
+                    <span class="font-mono text-emerald-400" id="finalHealthRed">-0&nbsp;€</span>
+                    </div>
+                    <div class="flex justify-between text-[11px]">
+                    <span class="text-slate-500 italic">Reducción Plan Pensiones</span>
+                    <span class="font-mono text-emerald-400" id="finalPensionRed">-0&nbsp;€</span>
+                    </div>
+                    <div class="flex justify-between text-[11px]">
+                    <span class="text-slate-500 italic">Deducción Donaciones</span>
+                    <span class="font-mono text-emerald-400" id="finalQuotaRed">-0&nbsp;€</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIONS (Save/Load) -->
+            <div class="space-y-4">
+                <!-- Save Simulation -->
+                <div class="card p-4 border border-slate-200">
+                    <h4 class="text-sm font-bold text-slate-700 mb-3">Guardar Escenario</h4>
+                    <div class="space-y-3">
+                        <input
+                        type="text"
+                        id="simName"
+                        placeholder="Nombre..."
+                        class="w-full bg-slate-50 border border-slate-200 rounded p-2 text-slate-700 text-sm focus:ring-1 focus:ring-blue-400 outline-none"
+                        />
+                        <button
+                        onclick="saveSimulation()"
+                        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded text-sm transition-colors flex items-center justify-center gap-2"
+                        >
+                        <span class="material-symbols-outlined text-sm">save</span>
+                        Guardar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SAVED SIMS MINI LIST -->
+                <div id="savedSimsCard" class="card p-4 border border-slate-200 hidden">
+                    <div class="flex justify-between items-center mb-2">
+                        <h4 class="text-sm font-bold text-slate-700">Historial</h4>
+                        <div class="flex gap-1">
+                            <button onclick="exportToJSON()" class="text-slate-400 hover:text-blue-600" title="Exportar"><span class="material-symbols-outlined text-sm">download</span></button>
+                            <button onclick="triggerImport()" class="text-slate-400 hover:text-emerald-600" title="Importar"><span class="material-symbols-outlined text-sm">upload</span></button>
+                            <input type="file" id="importInput" class="hidden" accept=".json" onchange="importFromJSON(event)" />
+                        </div>
+                    </div>
+                    <div id="savedSimsList" class="space-y-2 max-h-40 overflow-y-auto">
+                        <!-- Simulations will be listed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: TABLES (Previously col-span-8) -->
+        <div class="space-y-6">
+            <!-- TABS CONTROLS -->
+            <div class="flex space-x-2 border-b border-slate-200">
+            <button
+                onclick="switchTab('global')"
+                id="tab-global"
+                class="px-4 py-2 text-sm font-bold text-blue-600 border-b-2 border-blue-600 transition-colors"
+            >
+                Tabla Global Agregada
+            </button>
+            <button
+                onclick="switchTab('split')"
+                id="tab-split"
+                class="px-4 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors"
+            >
+                Desglose Estatal/Autonómico
+            </button>
+            </div>
+
+            <!-- TAB CONTENT: GLOBAL -->
+            <div id="view-global" class="space-y-6 animate-fade-in">
+            <!-- DESGLOSE DE LA BASE LIQUIDABLE -->
+            <div class="card p-5 border-l-4 border-blue-400 bg-blue-50/30">
+                <h3
+                class="text-sm font-bold text-slate-700 mb-3 uppercase tracking-wider flex items-center gap-2"
+                >
+                <span class="material-symbols-outlined text-blue-500"
+                    >analytics</span
+                >
+                Desglose de Base Liquidable
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+                <div>
+                    <span class="text-slate-500 block">(+) Facturación Bruta</span>
+                    <span class="font-bold text-slate-800" id="traceFact"
+                    >0&nbsp;€</span
+                    >
+                </div>
+                <div>
+                    <span class="text-slate-500 block">(-) Gastos y Autónomos</span>
+                    <span class="font-bold text-red-500" id="traceExp"
+                    >0&nbsp;€</span
+                    >
+                </div>
+                <div>
+                    <span class="text-slate-500 block">(-) Seguro Médico</span>
+                    <span class="font-bold text-red-500" id="traceHealth"
+                    >0&nbsp;€</span
+                    >
+                </div>
+                <div>
+                    <span class="text-slate-500 block">(-) 5% Difícil Justif.</span>
+                    <span class="font-bold text-red-500" id="traceDiff"
+                    >0&nbsp;€</span
+                    >
+                </div>
+                <div>
+                    <span class="text-slate-500 block">(-) Planes Pensiones</span>
+                    <span class="font-bold text-red-500" id="tracePens"
+                    >0&nbsp;€</span
+                    >
+                </div>
+                <div>
+                    <span class="text-slate-500 block">(-) Reducción C. Bajos</span>
+                    <span class="font-bold text-red-500" id="traceLow"
+                    >0&nbsp;€</span
+                    >
+                </div>
+                <div
+                    class="md:col-span-2 bg-white p-2 rounded border border-blue-100 flex justify-between items-center"
+                >
+                    <span class="font-bold text-blue-800 uppercase"
+                    >Base Liquidable:</span
+                    >
+                    <span
+                    class="text-lg font-black text-blue-600"
+                    id="traceFinalBase"
+                    >0&nbsp;€</span
+                    >
+                </div>
+                </div>
+            </div>
+
+            <div class="card p-0 overflow-hidden border border-slate-200">
+                <div
+                class="p-4 bg-slate-50 border-b border-slate-200 flex justify-between items-center"
+                >
+                <div>
+                    <h3 class="font-bold text-slate-800">
+                    Tramos IRPF Consolidados
+                    </h3>
+                    <p class="text-xs text-slate-500">
+                    Suma de tipos Estatal + Autonómico para cada tramo de renta.
+                    </p>
+                </div>
+                <div
+                    class="text-xs font-mono bg-white border px-2 py-1 rounded text-slate-600"
+                >
+                    Base Liquidable: <strong id="globalBaseLiq">0&nbsp;€</strong>
+                </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                <table class="w-full bracket-table">
+                    <thead>
+                    <tr>
+                        <th>Tramo de Renta</th>
+                        <th>Base en Tramo</th>
+                        <th>Tipo Global</th>
+                        <th>Desglose</th>
+                        <th>Cuota</th>
+                        <th>Acumulado</th>
+                    </tr>
+                    </thead>
+                    <tbody id="globalTableBody"></tbody>
+                </table>
+                </div>
+
+                <div
+                class="p-4 bg-yellow-50 border-t border-yellow-100 text-sm flex justify-between items-center"
+                >
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-yellow-600">info</span>
+                    <span class="text-yellow-800">El Tipo Marginal (máximo que pagas) es del <strong id="marginalRateDisplay">0.00%</strong></span>
+                </div>
+                </div>
+            </div>
+
+            <!-- Calculation Trace Global -->
+            <div class="card p-5 grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+                <div>
+                <div class="text-slate-500 text-xs uppercase font-bold mb-1">
+                    Cuota Íntegra
+                </div>
+                <div class="text-lg font-bold text-slate-800" id="globalIntegra">
+                    0&nbsp;€
+                </div>
+                <p class="text-xs text-slate-400">Impuesto según tramos.</p>
+                </div>
+                <div class="relative">
+                <div
+                    class="absolute left-0 top-2 bottom-2 w-px bg-slate-200 hidden md:block"
+                ></div>
+                <div class="md:pl-6">
+                    <div class="text-slate-500 text-xs uppercase font-bold mb-1">
+                    (-) Mínimos
+                    </div>
+                    <div
+                    class="text-lg font-bold text-emerald-600"
+                    id="globalMinDed"
+                    >
+                    -0&nbsp;€
+                    </div>
+                    <p class="text-xs text-slate-400">Ahorro por Min. Personal.</p>
+                </div>
+                </div>
+                <div class="relative">
+                <div
+                    class="absolute left-0 top-2 bottom-2 w-px bg-slate-200 hidden md:block"
+                ></div>
+                <div class="md:pl-6">
+                    <div class="text-slate-500 text-xs uppercase font-bold mb-1">
+                    (-) Donativos
+                    </div>
+                    <div
+                    class="text-lg font-bold text-emerald-600"
+                    id="globalNgoDed"
+                    >
+                    -0&nbsp;€
+                    </div>
+                    <p class="text-xs text-slate-400">Deducción ONG.</p>
+                </div>
+                </div>
+                <div class="relative">
+                <div
+                    class="absolute left-0 top-2 bottom-2 w-px bg-slate-200 hidden md:block"
+                ></div>
+                <div class="md:pl-6">
+                    <div class="text-slate-500 text-xs uppercase font-bold mb-1">
+                    Cuota Líquida
+                    </div>
+                    <div class="text-lg font-bold text-blue-600" id="globalLiquida">
+                    0&nbsp;€
+                    </div>
+                    <p class="text-xs text-slate-400">Impuesto neto final.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- TAB CONTENT: SPLIT -->
+            <div id="view-split" class="hidden space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- State Table -->
+                <div class="card overflow-hidden border border-slate-200">
+                <div
+                    class="bg-indigo-50 p-3 border-b border-indigo-100 font-bold text-indigo-900 text-sm"
+                >
+                    Parte Estatal (50%)
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full bracket-table">
+                    <thead>
+                        <tr>
+                        <th>Tramo</th>
+                        <th>Base</th>
+                        <th>Tipo</th>
+                        <th>Cuota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="splitTableState"></tbody>
+                    </table>
+                </div>
+                <div
+                    class="p-3 bg-indigo-50/50 text-right text-xs font-bold text-indigo-800"
+                    id="splitTotalState"
+                >
+                    Cuota Íntegra: 0&nbsp;€
+                </div>
+                </div>
+                <!-- Regional Table -->
+                <div class="card overflow-hidden border border-slate-200">
+                <div
+                    class="bg-emerald-50 p-3 border-b border-emerald-100 font-bold text-emerald-900 text-sm"
+                >
+                    Parte Autonómica (50%)
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full bracket-table">
+                    <thead>
+                        <tr>
+                        <th>Tramo</th>
+                        <th>Base</th>
+                        <th>Tipo</th>
+                        <th>Cuota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="splitTableRegion"></tbody>
+                    </table>
+                </div>
+                <div
+                    class="p-3 bg-emerald-50/50 text-right text-xs font-bold text-emerald-800"
+                    id="splitTotalRegion"
+                >
+                    Cuota Íntegra: 0&nbsp;€
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- DOCUMENTACIÓN / EXPLICACIÓN -->
+            <div class="space-y-4 pt-4">
+            <h2
+                class="text-xl font-bold text-slate-800 flex items-center gap-2 px-2"
+            >
+                <span class="material-symbols-outlined text-blue-600"
+                >help_outline</span
+                >
+                Guía de Cálculo IRPF 2025
+            </h2>
+
+            <div class="space-y-2">
+                <details
+                class="group bg-white rounded-xl border border-slate-200 overflow-hidden"
+                >
+                <summary
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-slate-50 transition-colors list-none"
+                >
+                    <span class="font-bold text-slate-700"
+                    >1. ¿Cómo se calcula la Base Liquidable?</span
+                    >
+                    <span
+                    class="material-symbols-outlined transition-transform group-open:rotate-180"
+                    >expand_more</span
+                    >
+                </summary>
+                <div
+                    class="p-4 border-t border-slate-100 text-sm text-slate-600 space-y-3"
+                >
+                    <p>El proceso sigue estos pasos:</p>
+                    <ol class="list-decimal pl-5 space-y-2">
+                    <li>
+                        <strong>Rendimiento Neto:</strong> Facturación Total -
+                        Gastos Afectos - Cuota de Autónomos - Seguro Médico (máximo
+                        500€ por persona: titular, cónyuge e hijos &lt; 25 años).
+                    </li>
+                    <li>
+                        <strong>Gastos Difícil Justificación:</strong> Se resta un
+                        5% del Rendimiento Neto (máximo 2.000€ anuales).
+                    </li>
+                    <li>
+                        <strong>Reducción por Rendimientos Actividades:</strong> Si
+                        el rendimiento es bajo (menos de 19.747,5€), se aplica una
+                        reducción adicional.
+                    </li>
+                    <li>
+                        <strong>Planes de Pensiones:</strong> Se restan las
+                        aportaciones a planes individuales (máx. 1.500€) y planes de
+                        empleo para autónomos (máx. 4.250€ adicional). El total no
+                        puede superar el 30% del rendimiento neto.
+                    </li>
+                    </ol>
+                </div>
+                </details>
+
+                <details
+                class="group bg-white rounded-xl border border-slate-200 overflow-hidden"
+                >
+                <summary
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-slate-50 transition-colors list-none"
+                >
+                    <span class="font-bold text-slate-700"
+                    >2. Los Tramos de IRPF (Estatal + Autonómico)</span
+                    >
+                    <span
+                    class="material-symbols-outlined transition-transform group-open:rotate-180"
+                    >expand_more</span
+                    >
+                </summary>
+                <div
+                    class="p-4 border-t border-slate-100 text-sm text-slate-600 space-y-3"
+                >
+                    <p>
+                    El IRPF es un impuesto progresivo que se divide en dos partes
+                    al 50%:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1">
+                    <li>
+                        <strong>Tramo Estatal:</strong> Es el mismo para toda España
+                        (excepto País Vasco y Navarra).
+                    </li>
+                    <li>
+                        <strong>Tramo Autonómico:</strong> Cada comunidad aprueba su
+                        propia tabla.
+                    </li>
+                    </ul>
+                    <p>
+                    En el simulador, la <strong>Tabla Global</strong> suma ambos
+                    porcentajes para mostrarte cuánto pagas realmente por cada
+                    euro que ganas en ese tramo.
+                    </p>
+                </div>
+                </details>
+
+                <details
+                class="group bg-white rounded-xl border border-slate-200 overflow-hidden"
+                >
+                <summary
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-slate-50 transition-colors list-none"
+                >
+                    <span class="font-bold text-slate-700"
+                    >3. El Mínimo Personal y Familiar</span
+                    >
+                    <span
+                    class="material-symbols-outlined transition-transform group-open:rotate-180"
+                    >expand_more</span
+                    >
+                </summary>
+                <div
+                    class="p-4 border-t border-slate-100 text-sm text-slate-600 space-y-3"
+                >
+                    <p>
+                    Hacienda considera que una parte de tu renta no debe pagar
+                    impuestos porque se destina a cubrir tus necesidades básicas y
+                    las de tu familia.
+                    </p>
+                    <p>
+                    <strong>¿Cómo funciona?</strong> No se resta directamente de
+                    tus ingresos. En su lugar, se calcula cuánto impuesto pagarían
+                    esos mínimos empezando desde el primer tramo (el más barato) y
+                    esa cantidad se resta de tu cuota íntegra.
+                    </p>
+                    <p>
+                    Mínimo base 2025: <strong>5.550€</strong> (aumenta con la edad
+                    e hijos).
+                    </p>
+                </div>
+                </details>
+
+                <details
+                class="group bg-white rounded-xl border border-slate-200 overflow-hidden"
+                >
+                <summary
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-slate-50 transition-colors list-none"
+                >
+                    <span class="font-bold text-slate-700"
+                    >4. Deducciones y Resultado Final</span
+                    >
+                    <span
+                    class="material-symbols-outlined transition-transform group-open:rotate-180"
+                    >expand_more</span
+                    >
+                </summary>
+                <div
+                    class="p-4 border-t border-slate-100 text-sm text-slate-600 space-y-3"
+                >
+                    <p>Una vez calculada la cuota, restamos las deducciones:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                    <li>
+                        <strong>Donaciones ONG:</strong> 80% de los primeros 250€ y
+                        40% del resto.
+                    </li>
+                    <li>
+                        <strong>Retenciones (15%):</strong> Es dinero que ya has
+                        adelantado a Hacienda en tus facturas.
+                    </li>
+                    </ul>
+                    <p>
+                    Si el resultado es negativo, Hacienda te
+                    <strong>devuelve</strong> el exceso de retenciones. Si es
+                    positivo, te toca <strong>pagar</strong>.
+                    </p>
+                </div>
+                </details>
+            </div>
+            </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script>
+      // --- DATA ---
+      const RETA_2025 = [
+        { limit: 670, base: 653.59 },
+        { limit: 900, base: 718.95 },
+        { limit: 1166, base: 849.67 },
+        { limit: 1300, base: 950.98 },
+        { limit: 1500, base: 960.78 },
+        { limit: 1700, base: 960.78 },
+        { limit: 1850, base: 1143.79 },
+        { limit: 2030, base: 1209.15 },
+        { limit: 2330, base: 1274.51 },
+        { limit: 2760, base: 1356.21 },
+        { limit: 3190, base: 1437.91 },
+        { limit: 3620, base: 1519.61 },
+        { limit: 4050, base: 1601.31 },
+        { limit: 6000, base: 1732.03 },
+        { limit: Infinity, base: 1928.1 },
+      ];
+      const RETA_RATE = 0.314;
+
+      const STATE_SCALE = [
+        { l: 12450, r: 0.095 },
+        { l: 20200, r: 0.12 },
+        { l: 35200, r: 0.15 },
+        { l: 60000, r: 0.185 },
+        { l: 300000, r: 0.225 },
+        { l: Infinity, r: 0.245 },
+      ];
+
+      const REGIONAL_SCALES = {
+        common: [
+          { l: 12450, r: 0.095 },
+          { l: 20200, r: 0.12 },
+          { l: 35200, r: 0.15 },
+          { l: 60000, r: 0.185 },
+          { l: 300000, r: 0.225 },
+          { l: Infinity, r: 0.245 },
+        ],
+        madrid: [
+          { l: 12960, r: 0.085 },
+          { l: 18222, r: 0.107 },
+          { l: 34041, r: 0.128 },
+          { l: 54959, r: 0.174 },
+          { l: Infinity, r: 0.205 },
+        ],
+        andalucia: [
+          { l: 13000, r: 0.095 },
+          { l: 21000, r: 0.12 },
+          { l: 35000, r: 0.15 },
+          { l: 60000, r: 0.185 },
+          { l: Infinity, r: 0.225 },
+        ],
+        cataluna: [
+          { l: 12450, r: 0.105 },
+          { l: 17707, r: 0.12 },
+          { l: 21000, r: 0.14 },
+          { l: 33007, r: 0.185 },
+          { l: 53407, r: 0.215 },
+          { l: 90000, r: 0.235 },
+          { l: 120000, r: 0.245 },
+          { l: Infinity, r: 0.255 },
+        ],
+        valencia: [
+          { l: 12450, r: 0.09 },
+          { l: 17000, r: 0.11 },
+          { l: 30000, r: 0.14 },
+          { l: 50000, r: 0.18 },
+          { l: Infinity, r: 0.225 },
+        ],
+        galicia: [
+          { l: 12450, r: 0.09 },
+          { l: 20200, r: 0.115 },
+          { l: 35200, r: 0.145 },
+          { l: 60000, r: 0.185 },
+          { l: Infinity, r: 0.225 },
+        ],
+        murcia: [
+          { l: 12450, r: 0.094 },
+          { l: 20200, r: 0.118 },
+          { l: 34000, r: 0.148 },
+          { l: 60000, r: 0.183 },
+          { l: Infinity, r: 0.225 },
+        ],
+        canarias: [
+          { l: 12450, r: 0.09 },
+          { l: 17707, r: 0.12 },
+          { l: 33007, r: 0.14 },
+          { l: 53407, r: 0.185 },
+          { l: 90000, r: 0.235 },
+          { l: 120000, r: 0.25 },
+          { l: Infinity, r: 0.26 },
+        ],
+      };
+
+      // --- LOGIC ---
+      function parseV(val) {
+        if (typeof val === "number") return val;
+        if (!val || val.toString().trim() === "") return 0;
+        // Limpiamos puntos de miles y aseguramos punto decimal para parseFloat
+        let s = val.toString().replace(/\./g, "").replace(",", ".");
+        return parseFloat(s) || 0;
+      }
+
+      function formatNumber(num, isCurrency = false) {
+        if (num === null || num === undefined || isNaN(num)) return "";
+
+        // Formateo manual para asegurar puntos en miles siempre (incluso en 4 cifras)
+        // y coma para decimales
+        let parts = num.toFixed(2).split(".");
+        let integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+        // Manejo de decimales: quitamos ceros sobrantes
+        let decimalPart = parts[1].replace(/0+$/, "");
+        let result = integerPart;
+        if (decimalPart.length > 0) {
+          result += "," + decimalPart;
+        }
+
+        return isCurrency ? result + " €" : result;
+      }
+
+      function formatV(val) {
+        if (
+          val === "" ||
+          val === undefined ||
+          val === null ||
+          val.toString().trim() === ""
+        )
+          return "";
+        return formatNumber(parseV(val), false);
+      }
+
+      function formatC(n) {
+        return formatNumber(n, true);
+      }
+
+      function formatP(n) {
+        // Para porcentajes seguimos usando Intl o manual si da problemas
+        let num = n * 100;
+        let parts = num.toFixed(2).split(".");
+        let integerPart = parts[0];
+        let decimalPart = parts[1].replace(/0+$/, "");
+        let result = integerPart;
+        if (decimalPart.length > 0) {
+          result += "," + decimalPart;
+        }
+        return result + " %";
+      }
+
+      function getRateAt(amount, scale) {
+        // Returns rate applicable for the specific marginal Euro amount
+        let prev = 0;
+        for (let b of scale) {
+          if (amount <= b.l) return b.r; // Found bracket
+          prev = b.l;
+        }
+        return scale[scale.length - 1].r;
+      }
+
+      // Merges two scales into one global sorted scale
+      function generateGlobalScale(state, region) {
+        let limits = new Set();
+        state.forEach((b) => limits.add(b.l));
+        region.forEach((b) => limits.add(b.l));
+        let sortedLimits = Array.from(limits).sort((a, b) => a - b);
+
+        let globalScale = [];
+        let prevLim = 0;
+
+        for (let lim of sortedLimits) {
+          // Checkpoint: midpoint of the interval to determine rates
+          // If limit is Infinity, we just take previous limit + 1
+          let checkPoint = lim === Infinity ? prevLim + 1 : prevLim + 0.01;
+
+          let rateS = getRateAt(checkPoint, state); // Note: strictly we need the rate for the bracket covering this interval
+          // Correct logic: find bracket where bracket.l >= checkPoint
+          let rS =
+            state.find((b) => b.l >= checkPoint)?.r ||
+            state[state.length - 1].r;
+          let rR =
+            region.find((b) => b.l >= checkPoint)?.r ||
+            region[region.length - 1].r;
+
+          globalScale.push({
+            l: lim,
+            r: rS + rR,
+            rS: rS,
+            rR: rR,
+          });
+          prevLim = lim;
+        }
+        return globalScale;
+      }
+
+      function calculateTaxOnScale(amount, scale) {
+        let tax = 0;
+        let rem = amount;
+        let prev = 0;
+        let breakdown = [];
+
+        for (let b of scale) {
+          if (amount <= prev) break;
+          let width = b.l === Infinity ? rem : Math.min(rem, b.l - prev);
+          let t = width * b.r;
+          tax += t;
+
+          breakdown.push({
+            range:
+              b.l === Infinity
+                ? `> ${formatC(prev)}`
+                : `${formatC(prev)} - ${formatC(b.l)}`,
+            rate: b.r,
+            rS: b.rS, // specific for global
+            rR: b.rR,
+            base: width,
+            quota: t,
+            acc: tax,
+          });
+
+          rem -= width;
+          prev = b.l;
+        }
+        return { total: tax, details: breakdown };
+      }
+
+    // Detailed Expenses Data
+    let detailedExpenses = [];
+
+    // --- EXPENSES LOGIC ---
+    function addExpense() {
+        const concept = document.getElementById('newExpConcept').value.trim();
+        const amountStr = document.getElementById('newExpAmount').value;
+        const amount = parseV(amountStr);
+        const freq = parseInt(document.getElementById('newExpFreq').value);
+        
+        if(!concept || amount <= 0) {
+            alert("Por favor, introduce concepto e importe válidos.");
+            return;
+        }
+
+        const annualAmount = amount * (freq === 12 ? 12 : 1);
+        
+        detailedExpenses.push({
+            concept,
+            amount,
+            freq, // 1 or 12
+            annualAmount
+        });
+
+        // Clear inputs
+        document.getElementById('newExpConcept').value = "";
+        document.getElementById('newExpAmount').value = "";
+        
+        renderExpensesList();
+        calculate();
+    }
+
+    function removeExpense(index) {
+        detailedExpenses.splice(index, 1);
+        renderExpensesList();
+        calculate();
+    }
+
+    function renderExpensesList() {
+        const container = document.getElementById('expensesListContainer');
+        const tbody = document.getElementById('expensesListBody');
+        const sumEl = document.getElementById('expensesSum');
+        
+        if (detailedExpenses.length === 0) {
+            container.classList.add('hidden');
+            sumEl.innerText = "0,00 €";
+            return;
+        }
+        
+        container.classList.remove('hidden');
+        tbody.innerHTML = "";
+        
+        let total = 0;
+        detailedExpenses.forEach((item, index) => {
+            total += item.annualAmount;
+            const tr = document.createElement('tr');
+            tr.className = "border-b border-slate-100 last:border-0";
+            tr.innerHTML = `
+                <td class="p-2 text-slate-700">${item.concept}</td>
+                <td class="p-2 text-right text-slate-600 w-24">${formatC(item.annualAmount)}</td>
+                <td class="p-2 text-right w-8">
+                    <button onclick="removeExpense(${index})" class="text-red-400 hover:text-red-600 transition-colors">
+                        <span class="material-symbols-outlined text-sm">close</span>
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(tr);
+        });
+        
+        sumEl.innerText = formatC(total);
+    }
+
+      function calculate() {
+        // Inputs
+        const inc = parseV(document.getElementById("annualInvoice").value);
+        let exp = parseV(document.getElementById("annualExpenses").value);
+
+        // Add detailed expenses to total expenses
+        const totalDetailed = detailedExpenses.reduce((acc, curr) => acc + curr.annualAmount, 0);
+        exp += totalDetailed;
+
+        const regionKey = document.getElementById("region").value;
+        const age = document.getElementById("age").value;
+        const child = parseInt(document.getElementById("children").value);
+        const diffJust = document.getElementById("diffJustToggle").checked;
+
+        // New Inputs
+        const healthIns = parseV(
+          document.getElementById("healthInsurance").value
+        );
+        const healthP =
+          parseInt(document.getElementById("healthPeople").value) || 1;
+        const persPension = parseV(
+          document.getElementById("personalPension").value
+        );
+        const autoPension = parseV(
+          document.getElementById("autonomoPension").value
+        );
+        const ngoDon = parseV(document.getElementById("ngoDonations").value);
+
+        // Quota
+        let quotaVal = document.getElementById("annualQuota").value;
+        let quota = 0;
+        if (quotaVal === "") {
+          // Auto
+          let netEst = (inc - exp) / 12;
+          let row =
+            RETA_2025.find((x) => netEst <= x.limit) ||
+            RETA_2025[RETA_2025.length - 1];
+          let q = row.base * RETA_RATE;
+          netEst = (inc - exp - q * 12) / 12; // refine
+          row =
+            RETA_2025.find((x) => netEst <= x.limit) ||
+            RETA_2025[RETA_2025.length - 1];
+          quota = row.base * RETA_RATE * 12;
+          if (inc > 0 && quota < 2700) quota = 2700;
+        } else {
+          quota = parseV(quotaVal);
+        }
+
+        // Base Calculation
+        // 1. Health Insurance as deductible expense (Max 500€ per person)
+        const deductibleHealth = Math.min(healthIns, healthP * 500);
+
+        let net = inc - exp - quota - deductibleHealth;
+        let diff = diffJust && net > 0 ? Math.min(net * 0.05, 2000) : 0;
+        let netRed = net - diff;
+
+        // 2. Pension Plan Reductions
+        // Limits: Individual 1500, Autonomous 4250, Total 30% of netRed
+        let totalPension =
+          Math.min(persPension, 1500) + Math.min(autoPension, 4250);
+        totalPension = Math.min(totalPension, Math.max(0, netRed * 0.3));
+        netRed = Math.max(0, netRed - totalPension);
+
+        let redLow = 0;
+        if (netRed <= 14047.5) redLow = 6498;
+        else if (netRed <= 19747.5) redLow = 6498 - 1.14 * (netRed - 14047.5);
+
+        let base = Math.max(0, netRed - redLow);
+
+        // Min Personal
+        let minP = 5550;
+        if (age === "over65") minP += 1150;
+        if (age === "over75") minP += 2550;
+        let minF = 0;
+        if (child >= 1) minF += 2400;
+        if (child >= 2) minF += 2700;
+        if (child >= 3) minF += 4000;
+        if (child >= 4) minF += 4500 * (child - 3);
+        let totalMin = minP + minF;
+
+        // --- GLOBAL TABLE CALC ---
+        let regScale = REGIONAL_SCALES[regionKey];
+        let globalScale = generateGlobalScale(STATE_SCALE, regScale);
+
+        // Tax on Base (Integra)
+        let calcBase = calculateTaxOnScale(base, globalScale);
+        let taxBase = calcBase.total;
+
+        // Tax on Min (Deduction)
+        // Note: We use the same global scale to calculate the value of the deduction
+        let calcMin = calculateTaxOnScale(totalMin, globalScale);
+        let taxMin = calcMin.total;
+
+        let liquidQuota = Math.max(0, taxBase - taxMin);
+
+        // 3. NGO Donations Deduction (80% first 250€, 40% rest)
+        let ngoDeduction =
+          Math.min(ngoDon, 250) * 0.8 + Math.max(0, ngoDon - 250) * 0.4;
+        // Limit: 10% of base liquidable is the usual limit for these deductions
+        ngoDeduction = Math.min(ngoDeduction, base * 0.1);
+
+        let finalTax = Math.max(0, liquidQuota - ngoDeduction);
+        let withholdings = inc * 0.15;
+        let balance = finalTax - withholdings;
+
+        // --- RENDER UI ---
+
+        // Result Box
+        const resEl = document.getElementById("finalBalance");
+        const resLbl = document.getElementById("finalBalanceLabel");
+        if (balance > 0) {
+          resEl.innerText = formatC(balance);
+          resEl.className = "text-3xl font-black text-red-400";
+          resLbl.innerText = "A PAGAR";
+          resLbl.className =
+            "text-sm font-bold text-red-200 mt-1 uppercase bg-red-900/30 px-2 py-1 rounded inline-block";
+        } else {
+          resEl.innerText = formatC(Math.abs(balance));
+          resEl.className = "text-3xl font-black text-emerald-400";
+          resLbl.innerText = "A DEVOLVER";
+          resLbl.className =
+            "text-sm font-bold text-emerald-200 mt-1 uppercase bg-emerald-900/30 px-2 py-1 rounded inline-block";
+        }
+
+        document.getElementById("totalTaxDisplay").innerText =
+          formatC(finalTax);
+        document.getElementById("withholdingsDisplay").innerText =
+          "-" + formatC(withholdings);
+        document.getElementById("effectiveRateDisplay").innerText =
+          inc > 0 ? formatP(finalTax / inc) : formatP(0);
+
+        // Summary & Trace Text
+        document.getElementById("traceFact").innerText = formatC(inc);
+        document.getElementById("traceExp").innerText =
+          "-" + formatC(exp + quota);
+        document.getElementById("traceHealth").innerText =
+          "-" + formatC(deductibleHealth);
+        document.getElementById("traceDiff").innerText = "-" + formatC(diff);
+        document.getElementById("tracePens").innerText =
+          "-" + formatC(totalPension);
+        document.getElementById("traceLow").innerText = "-" + formatC(redLow);
+        document.getElementById("traceFinalBase").innerText = formatC(base);
+
+        document.getElementById("globalBaseLiq").innerText = formatC(base);
+        document.getElementById("globalIntegra").innerText = formatC(taxBase);
+        document.getElementById("globalMinDed").innerText =
+          "-" + formatC(taxMin);
+        document.getElementById("globalNgoDed").innerText =
+          "-" + formatC(ngoDeduction);
+        document.getElementById("globalLiquida").innerText = formatC(finalTax);
+
+        // Final Card Breakdown
+        document.getElementById("finalHealthRed").innerText =
+          "-" + formatC(deductibleHealth);
+        document.getElementById("finalPensionRed").innerText =
+          "-" + formatC(totalPension);
+        document.getElementById("finalQuotaRed").innerText =
+          "-" + formatC(ngoDeduction);
+
+        // Topbar Summary
+        document.getElementById("topNet").innerText = formatC(netRed);
+        const topBal = document.getElementById("topBalance");
+        topBal.innerText = formatC(Math.abs(balance));
+        topBal.className =
+          balance > 0
+            ? "font-mono font-bold text-red-400"
+            : "font-mono font-bold text-emerald-400";
+
+        // Render Global Table
+        let tbody = document.getElementById("globalTableBody");
+        tbody.innerHTML = "";
+        let marginal = 0;
+
+        calcBase.details.forEach((row) => {
+          let tr = document.createElement("tr");
+          if (row.base > 0) {
+            tr.classList.add("bracket-row-active"); // Highlight active brackets
+            marginal = row.rate; // Last active row sets marginal
+          }
+          tr.innerHTML = `
+                <td class="text-slate-600">${row.range}</td>
+                <td class="${
+                  row.base > 0 ? "font-bold text-slate-700" : "text-slate-300"
+                }">${formatC(row.base)}</td>
+                <td class="font-bold text-slate-700">${formatP(row.rate)}</td>
+                <td class="text-[10px] text-slate-400 tracking-tighter">${formatP(
+                  row.rS
+                )} + ${formatP(row.rR)}</td>
+                <td class="${
+                  row.base > 0 ? "font-bold text-blue-600" : "text-slate-300"
+                }">${formatC(row.quota)}</td>
+                <td class="text-xs text-slate-400">${formatC(row.acc)}</td>
+            `;
+          tbody.appendChild(tr);
+        });
+        document.getElementById("marginalRateDisplay").innerText =
+          formatP(marginal);
+
+        // Render Split Tables (Hidden Tab)
+        renderSplitTable(
+          base,
+          STATE_SCALE,
+          "splitTableState",
+          "splitTotalState"
+        );
+        renderSplitTable(
+          base,
+          regScale,
+          "splitTableRegion",
+          "splitTotalRegion"
+        );
+      }
+
+      function renderSplitTable(amount, scale, tableId, totalId) {
+        let res = calculateTaxOnScale(
+          amount,
+          scale.map((x) => ({ l: x.l, r: x.r }))
+        ); // Map to match format
+        let html = "";
+        res.details.forEach((row) => {
+          html += `
+                <tr class="${row.base > 0 ? "bracket-row-active" : ""}">
+                    <td class="text-slate-600">${row.range}</td>
+                    <td class="${
+                      row.base > 0
+                        ? "font-medium text-slate-700"
+                        : "text-slate-300"
+                    }">${formatC(row.base)}</td>
+                    <td class="${
+                      row.base > 0 ? "text-slate-700" : "text-slate-300"
+                    }">${formatP(row.rate)}</td>
+                    <td class="${
+                      row.base > 0
+                        ? "font-bold text-blue-600"
+                        : "text-slate-300"
+                    }">${formatC(row.quota)}</td>
+                </tr>
+             `;
+        });
+        document.getElementById(tableId).innerHTML = html;
+        // Approx breakdown total (without min deduction) just for visual
+        document.getElementById(totalId).innerText =
+          "Cuota Íntegra: " + formatC(res.total);
+      }
+
+      function switchTab(tab) {
+        if (tab === "global") {
+          document.getElementById("view-global").classList.remove("hidden");
+          document.getElementById("view-split").classList.add("hidden");
+          document.getElementById("tab-global").className =
+            "px-4 py-2 text-sm font-bold text-blue-600 border-b-2 border-blue-600 transition-colors";
+          document.getElementById("tab-split").className =
+            "px-4 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors";
+        } else {
+          document.getElementById("view-global").classList.add("hidden");
+          document.getElementById("view-split").classList.remove("hidden");
+          document.getElementById("tab-global").className =
+            "px-4 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors";
+          document.getElementById("tab-split").className =
+            "px-4 py-2 text-sm font-bold text-blue-600 border-b-2 border-blue-600 transition-colors";
+        }
+      }
+
+      // --- STEP LOGIC ---
+      function setStep(step) {
+        const s1 = document.getElementById('step-1-container');
+        const s2 = document.getElementById('step-2-container');
+        const n1 = document.getElementById('nav-step-1');
+        const n2 = document.getElementById('nav-step-2');
+
+        if(step === 1) {
+            s1.classList.remove('hidden');
+            s2.classList.add('hidden');
+            
+            n1.className = "px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200 bg-white text-blue-600 shadow-sm";
+            n2.className = "px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200 text-slate-500 hover:text-slate-700";
+        } else {
+            s1.classList.add('hidden');
+            s2.classList.remove('hidden');
+
+            n1.className = "px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200 text-slate-500 hover:text-slate-700";
+            n2.className = "px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200 bg-white text-blue-600 shadow-sm";
+        }
+      }
+
+      // --- STORAGE LOGIC ---
+      function saveSimulation() {
+        const name =
+          document.getElementById("simName").value.trim() ||
+          `Simulación ${new Date().toLocaleDateString()}`;
+        const data = {
+          name: name,
+          date: new Date().toISOString(),
+          inputs: {
+            annualInvoice: document.getElementById("annualInvoice").value,
+            annualExpenses: document.getElementById("annualExpenses").value,
+            annualQuota: document.getElementById("annualQuota").value,
+            diffJustToggle: document.getElementById("diffJustToggle").checked,
+            region: document.getElementById("region").value,
+            age: document.getElementById("age").value,
+            children: document.getElementById("children").value,
+            healthInsurance: document.getElementById("healthInsurance").value,
+            healthPeople: document.getElementById("healthPeople").value,
+            personalPension: document.getElementById("personalPension").value,
+            autonomoPension: document.getElementById("autonomoPension").value,
+            ngoDonations: document.getElementById("ngoDonations").value,
+          },
+          detailedExpenses: detailedExpenses // Save detailed expenses
+        };
+
+
+        let sims = JSON.parse(localStorage.getItem("simulaciones") || "[]");
+        sims.push(data);
+        localStorage.setItem("simulaciones", JSON.stringify(sims));
+
+        document.getElementById("simName").value = "";
+        renderSavedSims();
+      }
+
+      function renderSavedSims() {
+        const sims = JSON.parse(localStorage.getItem("simulaciones") || "[]");
+        
+        // Containers for Step 1 and Step 2
+        const containers = [
+            { card: document.getElementById("savedSimsCardStep1"), list: document.getElementById("savedSimsListStep1") },
+            { card: document.getElementById("savedSimsCard"), list: document.getElementById("savedSimsList") }
+        ];
+
+        containers.forEach(c => {
+            if (!c.card || !c.list) return;
+            
+            if (sims.length === 0) {
+                c.card.classList.add("hidden");
+                return;
+            }
+
+            c.card.classList.remove("hidden");
+            c.list.innerHTML = "";
+
+            sims.forEach((sim, index) => {
+                const div = document.createElement("div");
+                div.className = "p-3 bg-white rounded-lg border border-slate-100 flex justify-between items-center group shadow-sm";
+                div.innerHTML = `
+                    <div class="overflow-hidden">
+                        <div class="font-bold text-slate-700 text-xs truncate">${sim.name}</div>
+                        <div class="text-[9px] text-slate-400">${new Date(sim.date).toLocaleDateString()}</div>
+                    </div>
+                    <div class="flex gap-1">
+                        <button onclick="loadSimulation(${index})" class="p-1 text-blue-600 hover:bg-blue-50 rounded transition-colors" title="Cargar">
+                            <span class="material-symbols-outlined text-base">upload_file</span>
+                        </button>
+                        <button onclick="deleteSimulation(${index})" class="p-1 text-red-400 hover:bg-red-50 rounded transition-colors" title="Eliminar">
+                            <span class="material-symbols-outlined text-base">delete</span>
+                        </button>
+                    </div>
+                `;
+                c.list.appendChild(div);
+            });
+        });
+      }
+
+      function loadSimulation(index) {
+        const sims = JSON.parse(localStorage.getItem("simulaciones") || "[]");
+        const sim = sims[index];
+        if (!sim) return;
+
+        const inputs = sim.inputs;
+        for (let id in inputs) {
+          const el = document.getElementById(id);
+          if (el) {
+            if (el.type === "checkbox") {
+              el.checked = inputs[id];
+            } else {
+              // Cargar el valor y formatearlo si es necesario
+              el.value =
+                el.type === "text" && id !== "simName"
+                  ? formatV(inputs[id])
+                  : inputs[id];
+            }
+          }
+        }
+        
+        // Load detailed expenses
+        detailedExpenses = sim.detailedExpenses || [];
+        renderExpensesList();
+
+        calculate();
+        setStep(1); // Go to inputs when loading
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function deleteSimulation(index) {
+        let sims = JSON.parse(localStorage.getItem("simulaciones") || "[]");
+        sims.splice(index, 1);
+        localStorage.setItem("simulaciones", JSON.stringify(sims));
+        renderSavedSims();
+      }
+
+      function exportToJSON() {
+        const sims = localStorage.getItem("simulaciones") || "[]";
+        const blob = new Blob([sims], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `simulaciones_renta_${
+          new Date().toISOString().split("T")[0]
+        }.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+
+      function triggerImport() {
+        document.getElementById("importInput").click();
+      }
+
+      function importFromJSON(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          try {
+            const importedSims = JSON.parse(e.target.result);
+            if (!Array.isArray(importedSims))
+              throw new Error(
+                "El archivo no contiene una lista válida de simulaciones."
+              );
+
+            if (
+              confirm(
+                `¿Deseas importar ${importedSims.length} simulaciones? Se añadirán a tu historial actual.`
+              )
+            ) {
+              let currentSims = JSON.parse(
+                localStorage.getItem("simulaciones") || "[]"
+              );
+              const mergedSims = [...currentSims, ...importedSims];
+              localStorage.setItem("simulaciones", JSON.stringify(mergedSims));
+              renderSavedSims();
+            }
+          } catch (err) {
+            alert("Error al importar el archivo: " + err.message);
+          }
+          event.target.value = ""; // Limpiar el input para permitir importar el mismo archivo de nuevo si fuera necesario
+        };
+        reader.readAsText(file);
+      }
+
+      // Init
+      renderSavedSims();
+      calculate();
+    </script>
+  </body>
+</html>

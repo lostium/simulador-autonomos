@@ -1,0 +1,149 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "packageManager": "pnpm"
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "simulador-autonomos": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "i18n": {
+        "sourceLocale": "es",
+        "locales": {
+          "en": {
+            "translation": "src/locales/messages.en.xlf",
+            "subPath": "en"
+          },
+          "ca": {
+            "translation": "src/locales/messages.ca.xlf",
+            "subPath": "ca"
+          },
+          "gl": {
+            "translation": "src/locales/messages.gl.xlf",
+            "subPath": "gl"
+          },
+          "eu": {
+            "translation": "src/locales/messages.eu.xlf",
+            "subPath": "eu"
+          }
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "localize": true,
+            "browser": "src/main.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            },
+            "polyfills": [
+              "@angular/localize/init"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "15kB",
+                  "maximumError": "25kB"
+                }
+              ],
+              "outputHashing": "all",
+              "serviceWorker": "ngsw-config.json"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            },
+            "es": {
+              "localize": ["es"]
+            },
+            "en": {
+              "localize": ["en"]
+            },
+            "ca": {
+              "localize": ["ca"]
+            },
+            "gl": {
+              "localize": ["gl"]
+            },
+            "eu": {
+              "localize": ["eu"]
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "simulador-autonomos:build:production"
+            },
+            "development": {
+              "buildTarget": "simulador-autonomos:build:development"
+            },
+            "es": {
+              "buildTarget": "simulador-autonomos:build:development,es"
+            },
+            "en": {
+              "buildTarget": "simulador-autonomos:build:development,en"
+            },
+            "ca": {
+              "buildTarget": "simulador-autonomos:build:development,ca"
+            },
+            "gl": {
+              "buildTarget": "simulador-autonomos:build:development,gl"
+            },
+            "eu": {
+              "buildTarget": "simulador-autonomos:build:development,eu"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test"
+        },
+        "extract-i18n": {
+          "builder": "ng-extract-i18n-merge:ng-extract-i18n-merge",
+          "options": {
+            "buildTarget": "simulador-autonomos:build",
+            "format": "xlf2",
+            "outputPath": "src/locales",
+            "trim": false,
+            "targetFiles": [
+              "messages.en.xlf",
+              "messages.ca.xlf",
+              "messages.gl.xlf",
+              "messages.eu.xlf"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

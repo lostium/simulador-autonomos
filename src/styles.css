@@ -1,0 +1,388 @@
+@import 'tailwindcss';
+
+/* ============================================
+   DESIGN TOKENS - Premium 2025
+   ============================================ */
+:root {
+  /* Accent Colors (shared between themes) */
+  --color-primary: #6366f1; /* Indigo */
+  --color-primary-glow: #818cf8;
+  --color-secondary: #06b6d4; /* Cyan */
+  --color-accent-purple: #a855f7;
+  --color-accent-blue: #3b82f6;
+  --color-accent-emerald: #10b981;
+  --color-accent-orange: #f97316;
+  --color-accent-rose: #f43f5e;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+  --gradient-success: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --gradient-danger: linear-gradient(135deg, #f43f5e 0%, #f97316 100%);
+
+  /* Spacing */
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+}
+
+/* ============================================
+   DARK THEME (Default)
+   ============================================ */
+:root,
+[data-theme='dark'] {
+  --color-bg-dark: #0a0a0f;
+  --color-bg-card: rgba(20, 20, 30, 0.7);
+  --color-bg-card-solid: #14141e;
+
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  --gradient-header: linear-gradient(135deg, #1e1b4b 0%, #0f172a 50%, #0c1222 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  --table-row-alt: rgba(255, 255, 255, 0.02);
+  --table-row-hover: rgba(99, 102, 241, 0.08);
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --input-border-hover: rgba(255, 255, 255, 0.2);
+
+  --scrollbar-track: rgba(255, 255, 255, 0.02);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.2);
+
+  --color-warning: #fbbf24;
+  --banner-bg: rgba(245, 158, 11, 0.15);
+  --banner-border: rgba(245, 158, 11, 0.3);
+}
+
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+[data-theme='light'] {
+  --color-bg-dark: #e2e8f0;
+  --color-bg-card: #ffffff;
+  --color-bg-card-solid: #ffffff;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #334155;
+  --color-text-muted: #475569;
+
+  --gradient-header: linear-gradient(135deg, #c7d2fe 0%, #ddd6fe 50%, #e0e7ff 100%);
+
+  --glass-bg: #ffffff;
+  --glass-border: rgba(0, 0, 0, 0.15);
+  --glass-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.06);
+
+  --table-row-alt: rgba(0, 0, 0, 0.03);
+  --table-row-hover: rgba(99, 102, 241, 0.12);
+  --input-bg: #f8fafc;
+  --input-border: rgba(0, 0, 0, 0.2);
+  --input-border-hover: rgba(0, 0, 0, 0.35);
+
+  --scrollbar-track: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.2);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.3);
+
+  /* Light theme specific semantic colors */
+  --color-slate-200: #334155;
+  --color-slate-300: #475569;
+  --color-slate-400: #64748b;
+  --color-slate-500: #64748b;
+
+  --color-warning: #b45309;
+  --banner-bg: rgba(245, 158, 11, 0.12);
+  --banner-border: rgba(180, 83, 9, 0.3);
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+body {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+}
+
+/* Ensure headings have proper contrast */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-primary);
+}
+
+/* Helper classes for text colors */
+.text-themed {
+  color: var(--color-text-primary);
+}
+.text-themed-secondary {
+  color: var(--color-text-secondary);
+}
+.text-themed-muted {
+  color: var(--color-text-muted);
+}
+
+/* Animated mesh gradient background */
+.bg-mesh {
+  background-color: var(--color-bg-dark);
+  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(59, 130, 246, 0.08) 0px, transparent 50%);
+}
+
+@layer components {
+  /* ============================================
+     GLASS CARD
+     ============================================ */
+  .glass-card {
+    @apply rounded-2xl border;
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card-solid {
+    @apply rounded-2xl border;
+    background: var(--color-bg-card);
+    border-color: var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+
+  /* ============================================
+     INPUT STYLES - Premium
+     ============================================ */
+  .input-label {
+    @apply block text-xs font-semibold mb-2 uppercase tracking-wider;
+    color: var(--color-text-secondary);
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl font-medium text-sm transition-all duration-300;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--color-text-primary);
+  }
+  .input-field::placeholder {
+    color: var(--color-text-muted);
+  }
+  .input-field:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2), 0 0 20px rgba(99, 102, 241, 0.1);
+  }
+  .input-field:hover:not(:focus) {
+    border-color: var(--input-border-hover);
+  }
+  .input-field[type='number'] {
+    @apply text-right tabular-nums;
+  }
+
+  /* Custom Select Arrow */
+  select.input-field {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3e%3c/path%3e%3c/svg%3e");
+    background-position: right 1rem center;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    padding-right: 2.5rem;
+  }
+
+  /* Hide number input arrows */
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+  /* ============================================
+     BUTTON STYLES
+     ============================================ */
+  .btn-primary {
+    @apply px-6 py-4 rounded-xl font-bold text-white transition-all duration-300 flex items-center justify-center gap-3;
+    background: var(--gradient-primary);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+  }
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  /* ============================================
+     TABLE STYLES
+     ============================================ */
+  .premium-table {
+    @apply w-full text-sm;
+  }
+  .premium-table thead th {
+    @apply py-3 px-4 text-xs font-bold uppercase tracking-wider text-right;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .premium-table thead th:first-child {
+    @apply text-left;
+  }
+  .premium-table tbody td {
+    @apply py-3 px-4 text-right tabular-nums;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  .premium-table tbody td:first-child {
+    @apply text-left font-medium;
+    color: var(--color-text-primary);
+  }
+  .premium-table tbody tr {
+    @apply transition-colors duration-200;
+  }
+  .premium-table tbody tr:hover {
+    background: rgba(99, 102, 241, 0.05);
+  }
+  .premium-table tbody tr.row-active {
+    background: rgba(99, 102, 241, 0.1);
+  }
+
+  /* Legacy support */
+  .bracket-table th {
+    @apply py-3 px-3 text-xs font-bold uppercase tracking-wider text-right;
+    color: var(--color-text-muted);
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .bracket-table th:first-child {
+    @apply text-left;
+  }
+  .bracket-table td {
+    @apply py-3 px-3 text-xs text-right tabular-nums whitespace-nowrap;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  .bracket-table td:first-child {
+    @apply text-left font-medium whitespace-normal min-w-[100px];
+  }
+  .bracket-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .bracket-table tbody tr:hover {
+    background: rgba(99, 102, 241, 0.08);
+  }
+  .bracket-row-active {
+    background: rgba(99, 102, 241, 0.1) !important;
+  }
+
+  /* Material Symbols Helper */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+
+  /* ============================================
+     GRADIENT TEXT
+     ============================================ */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ============================================
+     GLOW EFFECTS
+     ============================================ */
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  }
+  .glow-success {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+  .glow-danger {
+    box-shadow: 0 0 20px rgba(244, 63, 94, 0.3);
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.5);
+  }
+}
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out forwards;
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}

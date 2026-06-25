@@ -1,0 +1,1060 @@
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="es" trgLang="eu">
+  <file id="ngi18n" original="ng.template">
+    <unit id="disclaimer.close">
+      <segment state="translated">
+        <source>Cerrar aviso</source>
+        <target>Itxi abisua</target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.open">
+      <segment state="translated">
+        <source>Mostrar aviso importante</source>
+        <target>Erakutsi abisu garrantzitsua</target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.text">
+      <segment state="translated">
+        <source> Este simulador es un <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experimento de Lostium</pc> hecho con <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">vibe coding</pc> y no ofrece ningún tipo de garantía. En ningún caso hay fiabilidad de que los datos mostrados sean correctos para tu caso particular. Además, este simulador <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no contempla los regímenes forales de País Vasco y Navarra</pc>, ya que disponen de haciendas propias y normativa fiscal específica. </source>
+        <target> Simulagailu hau <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">vibe coding</pc>-ekin egindako <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Lostium-en esperimentu</pc> bat da eta ez du inolako bermerik eskaintzen. Inolaz ere ez dago fidagarritasunik erakutsitako datuak zuzenak direnik zure kasu partikularrerako. Gainera, simulagailu honek <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">ez ditu kontuan hartzen Euskadiko eta Nafarroako foru-erregimenak</pc>, ogasun propioak eta zerga-araudi espezifikoa baitituzte. </target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.title">
+      <segment state="translated">
+        <source>Aviso Importante</source>
+        <target>Abisu Garrantzitsua</target>
+      </segment>
+    </unit>
+    <unit id="header.subtitle">
+      <segment state="translated">
+        <source>Para Autónomos en España</source>
+        <target>Espainiako Autonomoentzat</target>
+      </segment>
+    </unit>
+    <unit id="header.title">
+      <segment state="translated">
+        <source>Simulador Renta </source>
+        <target>Errenta Simulagailua </target>
+      </segment>
+    </unit>
+    <unit id="history.btn.clearAll.title">
+      <segment state="translated">
+        <source>Eliminar todo</source>
+        <target>Ezabatu dena</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.delete.title">
+      <segment state="translated">
+        <source>Eliminar</source>
+        <target>Ezabatu</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.export.title">
+      <segment state="translated">
+        <source>Exportar</source>
+        <target>Esportatu</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.exportOne.title">
+      <segment state="translated">
+        <source>Exportar esta simulación</source>
+        <target>Esportatu simulazio hau</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.import.title">
+      <segment state="translated">
+        <source>Importar</source>
+        <target>Inportatu</target>
+      </segment>
+    </unit>
+    <unit id="history.import.subtitle">
+      <segment state="translated">
+        <source> Arrastra tus archivos JSON aquí o haz clic para buscarlos </source>
+        <target> Arrastatu zure JSON fitxategiak hona edo egin klik bilatzeko </target>
+      </segment>
+    </unit>
+    <unit id="history.import.title">
+      <segment state="translated">
+        <source>Importar Simulaciones</source>
+        <target>Inportatu Simulazioak</target>
+      </segment>
+    </unit>
+    <unit id="history.title">
+      <segment state="translated">
+        <source>Historial</source>
+        <target>Historia</target>
+      </segment>
+    </unit>
+    <unit id="info.cta.button">
+      <segment state="translated">
+        <source>Comenzar Simulación</source>
+        <target>Hasi Simulazioa</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.p1">
+      <segment state="translated">
+        <source>Antes de empezar, aclaremos el error más común: el IVA <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no pinta nada aquí</pc>. No es un ingreso, es un impuesto al consumo que paga tu cliente.</source>
+        <target>Hasi baino lehen, argitu dezagun akats ohikoena: BEZak <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">ez du hemen ezer pintatzen</pc>. Ez da sarrera bat, zure bezeroak ordaintzen duen kontsumoaren gaineko zerga baizik.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.p2">
+      <segment state="translated">
+        <source>Tú actúas simplemente como un &quot;recaudador&quot; temporal: lo cobras y luego se lo entregas intacto a Hacienda. No entra en el cálculo de tus beneficios ni del IRPF.</source>
+        <target>Zu aldi baterako &quot;biltzaile&quot; gisa soilik aritzen zara: kobratu eta gero Ogasunari osorik ematen diozu. Ez da sartzen zure irabazien edo PFEZaren kalkuluan.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.rule">
+      <segment state="translated">
+        <source>Regla de oro: Para usar este simulador (y para tu vida), mira siempre la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Imponible</pc> de tus facturas, nunca el total con IVA.</source>
+        <target>Urrezko araua: Simulagailu hau erabiltzeko (eta zure bizitzarako), begiratu beti zure fakturen <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Zerga Oinarria</pc>, inoiz ez guztizkoa BEZarekin.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.title">
+      <segment state="translated">
+        <source>6. El IVA: un dinero que nunca fue tuyo</source>
+        <target>6. BEZa: inoiz zurea izan ez zen dirua</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.intro">
+      <segment state="translated">
+        <source>No pagas impuestos por todo lo que facturas, sino solo por lo que realmente ganas (tu beneficio real). Para calcular tu capacidad de aportación:</source>
+        <target>Ez duzu zergarik ordaintzen fakturatzen duzun guztiagatik, benetan irabazten duzunagatik soilik baizik (zure benetako irabazia). Zure ekarpen-ahalmena kalkulatzeko:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.diff">
+      <segment state="translated">
+        <source>Se aplica un descuento automático del 5% para cubrir esos pequeños gastos difíciles de justificar.</source>
+        <target>%5eko deskontu automatikoa aplikatzen da justifikatzen zailak diren gastu txiki horiek estaltzeko.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.expenses">
+      <segment state="translated">
+        <source>Restamos los gastos necesarios para tu actividad: cuota de autónomos, servicios, seguro médico, etc.</source>
+        <target>Zure jarduerarako beharrezkoak diren gastuak kentzen ditugu: autonomoen kuota, zerbitzuak, aseguru medikoa, etab.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.reduction">
+      <segment state="translated">
+        <source>Si tus beneficios son ajustados, cuentas con una reducción extra de apoyo.</source>
+        <target>Zure irabaziak estuak badira, laguntzarako murrizketa gehigarri bat duzu.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.summary">
+      <segment state="translated">
+        <source>El resultado es la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Liquidable</pc>, que representa tu capacidad económica real y sobre la que se calcula tu contribución.</source>
+        <target>Emaitza <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Oinarri Likidagarria</pc> da, zure benetako gaitasun ekonomikoa adierazten duena eta zure ekarpena kalkulatzeko oinarria dena.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.title">
+      <segment state="translated">
+        <source>1. ¿Sobre qué beneficios aportas? (La base)</source>
+        <target>1. Zer irabaziren gainean egiten duzu ekarpena? (Oinarria)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.intro">
+      <segment state="translated">
+        <source>El IRPF funciona por escalones. No pagas lo mismo por el primer euro que ganas que por el último:</source>
+        <target>PFEZk mailaka funtzionatzen du. Ez duzu berdin ordaintzen irabazten duzun lehen euroagatik eta azkenekoagatik:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.list.high">
+      <segment state="translated">
+        <source>Si ganas mucho, los últimos euros pagan bastante más (casi la mitad).</source>
+        <target>Asko irabazten baduzu, azken euroek dezente gehiago ordaintzen dute (ia erdia).</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.list.low">
+      <segment state="translated">
+        <source>Los primeros euros pagan poquito.</source>
+        <target>Lehenengo euroek gutxi ordaintzen dute.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.summary">
+      <segment state="translated">
+        <source>Además, el impuesto tiene dos dueños: la mitad va para el <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Estado</pc> y la otra mitad para tu <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Comunidad Autónoma</pc>. Por eso, dependiendo de dónde vivas, la factura final cambia.</source>
+        <target>Gainera, zergak bi jabe ditu: erdia <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Estatuarentzat</pc> da eta beste erdia zure <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Autonomia Erkidegoarentzat</pc>. Horregatik, bizi zaren tokiaren arabera, azken faktura aldatu egiten da.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.title">
+      <segment state="translated">
+        <source>3. La escalera de los impuestos (Los tramos)</source>
+        <target>3. Zergen eskailera (Tarteak)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.content.p1">
+      <segment state="translated">
+        <source>El sistema reconoce que una parte de tus ingresos es esencial para cubrir tus necesidades básicas y las de tu familia, por lo que esa cantidad queda exenta de tributación.</source>
+        <target>Sistemak aitortzen du zure diru-sarreren zati bat ezinbestekoa dela zure eta zure familiaren oinarrizko beharrak estaltzeko, beraz, kopuru hori zergapekotzetik salbuetsita geratzen da.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.content.p2">
+      <segment state="translated">
+        <source>Partimos de unos <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">5.550€</pc> iniciales, cifra que aumenta si tienes hijos a cargo o según tu edad. En la práctica, se calcula el impuesto que correspondería a esa cantidad y se resta de tu cuota, garantizando que ese mínimo vital no tribute.</source>
+        <target>Hasierako <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">5.550€</pc>-tik abiatzen gara, eta kopuru hori handitu egiten da seme-alabak kargura badituzu edo zure adinaren arabera. Praktikan, kopuru horri legokiokeen zerga kalkulatzen da eta zure kuotatik kentzen da, gutxieneko bizi-kopuru horrek zergarik ordaintzen ez duela bermatuz.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.title">
+      <segment state="translated">
+        <source>4. Tu mínimo vital está protegido (Mínimos)</source>
+        <target>4. Zure gutxieneko bizia babestuta dago (Minimoak)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.intro">
+      <segment state="translated">
+        <source>Llega la hora de la verdad. Calculamos el impuesto total y miramos qué has pagado ya:</source>
+        <target>Iritsi da egiaren ordua. Zerga osoa kalkulatzen dugu eta zer ordaindu duzun ikusten dugu:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.list.deductions">
+      <segment state="translated">
+        <source>Restamos deducciones si eres solidario (donaciones a ONGs).</source>
+        <target>Kenkariak kentzen ditugu solidarioa bazara (GKEentzako dohaintzak).</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.list.retentions">
+      <segment state="translated">
+        <source>Restamos las <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Retenciones</pc>. Lo habitual es haber adelantado un 15% en tus facturas, aunque si eres &quot;nuevo autónomo&quot; (primeros 3 años) será solo un 7%. También puedes indicar la cantidad exacta que has aportado si llevas tu propia contabilidad.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Atxikipenak</pc> kentzen ditugu. Ohikoena zure fakturetan %15 aurreratu izana da, nahiz eta &quot;autonomo berria&quot; bazara (lehen 3 urteetan) %7 baino ez den izango. Zure kontabilitatea eramaten baduzu, ekarpen zehatza ere adieraz dezakezu.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.result">
+      <segment state="translated">
+        <source>Si has adelantado más dinero del que te tocaba, Hacienda te <pc id="0" equivStart="START_TAG_SPAN" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-emerald-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">devuelve</pc> la diferencia. Si te has quedado corto... toca <pc id="1" equivStart="START_TAG_SPAN_1" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-rose-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">pagar</pc>.</source>
+        <target>Zegokizuna baino diru gehiago aurreratu baduzu, Ogasunak aldea <pc id="0" equivStart="START_TAG_SPAN" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-emerald-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">itzultzen</pc> dizu. Motz geratu bazara... <pc id="1" equivStart="START_TAG_SPAN_1" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-rose-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">ordaintzea</pc> tokatzen da.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.title">
+      <segment state="translated">
+        <source>5. La cuenta final: ¿Pagar o devolver?</source>
+        <target>5. Azken kontua: ordaindu edo itzuli?</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q_reta.content">
+      <segment state="translated">
+        <source> El simulador incorpora automáticamente el cálculo de la cuota según el sistema de ingresos reales que aplicó durante el año pasado (2025). Al introducir tu previsión de ingresos, la herramienta estima la cuota mínima del tramo que te correspondió y la resta como un gasto deducible para mayor precisión en el cálculo final. </source>
+        <target> Simulagailuak automatikoki txertatzen du kuotaren kalkulua iaz (2025) aplikatu zen benetako diru-sarreren sistemaren arabera. Zure diru-sarreren aurreikuspena sartzean, tresnak zegokizun tartearen gutxieneko kuota estimatzen du eta gastu kengarri gisa kentzen du azken kalkuluan zehaztasun handiagoa lortzeko. </target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q_reta.title">
+      <segment state="translated">
+        <source>2. La Cuota de Autónomos (RETA) de 2025</source>
+        <target>2. Autonomoen Kuota (RETA) 2025</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.title">
+      <segment state="translated">
+        <source>El IRPF explicado para humanos</source>
+        <target>PFEZa gizakientzat azaldua</target>
+      </segment>
+    </unit>
+    <unit id="info.hero.description.purpose">
+      <segment state="translated">
+        <source> Este <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">simulador simplificado</pc> es un <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experimento de Lostium</pc> que realiza una estimación de tu IRPF basándose en tus <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">ingresos, retenciones y deducciones principales</pc>. También calcula automáticamente tu <pc id="3" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">cuota de autónomos de 2025</pc> (el año pasado) bajo el sistema de cotización por ingresos reales. </source>
+        <target> <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Simulagailu sinplifikatu</pc> hau <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Lostium-en esperimentu</pc> bat da, zure PFEZaren estimazioa egiten duena zure <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">sarrera, atxikipen eta kenkari nagusietan</pc> oinarrituta. Era berean, zure <pc id="3" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">2025eko autonomoen kuota</pc> (iazko urtea) automatikoki kalkulatzen du benetako sarrera-kotizazio sistemaren arabera. </target>
+      </segment>
+    </unit>
+    <unit id="info.hero.description.origin">
+      <segment state="translated">
+        <source> Surge de la necesidad de prever el resultado de la Declaración de la Renta de forma ágil, sin depender de complejas hojas de cálculo. Aunque fue concebido para <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">autónomos societarios</pc> en estimación directa simplificada, su lógica es útil para cualquier trabajador por cuenta propia. </source>
+        <target> Errenta Aitorpenaren emaitza modu arinean aurreikusteko beharretik sortzen da, kalkulu-orri konplexuen menpe egon gabe. Zuzeneko estimazio sinplifikatuan dauden <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">autonomo sozietarioentzat</pc> pentsatua izan bazen ere, bere logika baliagarria da bere konturako edozein langilerentzat. </target>
+      </segment>
+    </unit>
+    <unit id="info.hero.mode">
+      <segment state="translated">
+        <source>IRPF y cuota de autónomos de 2025</source>
+        <target>Autonomoen PFEZ 2025</target>
+      </segment>
+    </unit>
+    <unit id="info.hero.title">
+      <segment state="translated">
+        <source>Calcula tu </source>
+        <target>Kalkulatu zure </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.context.content">
+      <segment state="translated">
+        <source> Los modelos de IA dependen de sus datos de entrenamiento, que a menudo contienen información desactualizada. Esto puede llevar al uso de pautas obsoletas o &quot;deprecadas&quot;. Para evitarlo, es fundamental <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">inyectar el contexto de la documentación técnica más reciente</pc>, &quot;re-educando&quot; al modelo en tiempo real para que ignore viejos hábitos y aplique las últimas novedades tecnológicas. </source>
+        <target> AI ereduek entrenamendu-datuen menpe daude, eta datu horiek sarritan zaharkitutako informazioa izaten dute. Horrek jarraibide zaharkituak edo &quot;deprecatuak&quot; erabiltzea ekar dezake. Hori saihesteko, funtsezkoa da <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">dokumentazio tekniko eguneratuenaren testuingurua txertatzea</pc>, eredua denbora errealean &quot;berriro heziz&quot;, ohitura zaharrak alde batera utzi eta azken teknologia-berrikuntzak aplikatzeko. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.context.title">
+      <segment state="translated">
+        <source>El reto del conocimiento: contexto vs. entrenamiento</source>
+        <target>Ezagutzaren erronka: testuingurua vs. entrenamendua</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.methodology.content">
+      <segment state="translated">
+        <source> El éxito depende de dos pilares: una <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">definición clara de especificaciones</pc> y una rigurosa <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">supervisión humana</pc>. Nuestro rol se centra en validar cada entrega de la IA, corrigiendo desviaciones y asegurando que el producto final cumpla con los estándares de calidad más exigentes. </source>
+        <target> Arrakasta bi zutabetan oinarritzen da: <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">zehaztapenen definizio argia</pc> eta <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">giza gainbegiratze</pc> zorrotza. Gure papera AIaren entrega bakoitza balioztatzea da, desbideratzeak zuzenduz eta azken produktuak kalitate estandar zorrotzenak betetzen dituela ziurtatuz. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.methodology.title">
+      <segment state="translated">
+        <source>Metodología: definición y supervisión</source>
+        <target>Metodologia: Definizioa eta gainbegiratzea</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.process.content">
+      <segment state="translated">
+        <source> El desarrollo evolucionó desde un prototipo <pc id="0" equivStart="START_EMPHASISED_TEXT" equivEnd="CLOSE_EMPHASISED_TEXT" type="fmt" dispStart="&lt;em&gt;" dispEnd="&lt;/em&gt;">One Shot</pc> en HTML/JS hasta una arquitectura profesional en <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>. La conversión no fue automática; requirió un trabajo de <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">refinamiento y supervisión</pc> humana para guiar a la IA, asegurando que la adaptación cumpliera estrictamente con las mejores prácticas y patrones del framework. </source>
+        <target> Garapena HTML/JS-ko <pc id="0" equivStart="START_EMPHASISED_TEXT" equivEnd="CLOSE_EMPHASISED_TEXT" type="fmt" dispStart="&lt;em&gt;" dispEnd="&lt;/em&gt;">One Shot</pc> prototipo batetik <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>-eko arkitektura profesional batera eboluzionatu zen. Bihurketa ez zen automatikoa izan; giza <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">fintze eta gainbegiratze</pc> lana behar izan zuen AIa gidatzeko, egokitzapenak framework-aren praktika onak eta patroiak hertsiki betetzen zituela ziurtatuz. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.process.title">
+      <segment state="translated">
+        <source>One Shot: de prototipo a producción</source>
+        <target>One Shot: Prototipotik produkziora</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.security.content">
+      <segment state="translated">
+        <source> Esta aplicación funciona <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">100% en local</pc> dentro de tu navegador. Ningún dato fiscal, nombre o cifra se envía a servidores externos. Los cálculos se realizan en tu dispositivo y la información solo se guarda si decides usar la función de &quot;Historial&quot; (usando el almacenamiento local de tu navegador). </source>
+        <target> Aplikazio honek <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">%100 lokalean</pc> funtzionatzen du zure nabigatzailean. Ez da datu fiskalik, izenik edo zifrarik bidaltzen kanpoko zerbitzarietara. Kalkuluak zure gailuan egiten dira eta informazioa &quot;Historia&quot; funtzioa erabiltzea erabakitzen baduzu soilik gordetzen da (zure nabigatzaileko biltegiratze lokala erabiliz). </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.security.title">
+      <segment state="translated">
+        <source>Privacidad: tus datos no salen de aquí</source>
+        <target>Pribatutasuna: Zure datuak ez dira hemendik ateratzen</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.intro">
+      <segment state="translated">
+        <source> Arquitectura moderna diseñada para rendimiento y mantenibilidad: </source>
+        <target> Errendimendu eta mantentze-lanetarako diseinatutako arkitektura modernoa: </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.core">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>: Standalone Components, Signals y Control Flow (@if/@for).</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>: Standalone Components, Signals eta Control Flow (@if/@for).</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.css">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Tailwind CSS 4</pc>: Estilado atómico con el nuevo motor Oxide de alto rendimiento.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Tailwind CSS 4</pc>: Estilo atomikoa errendimendu handiko Oxide motor berriarekin.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.pwa">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Client-Side</pc>: Ejecución pura en JavaScript/TypeScript sin backend.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Client-Side</pc>: Exekuzio hutsa JavaScript/TypeScript-en backend gabe.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.state">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Signals</pc>: Gestión de estado reactiva y granular sin Zone.js.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Signals</pc>: Egoera kudeaketa erreaktiboa eta granularra Zone.js gabe.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.title">
+      <segment state="translated">
+        <source>Stack tecnológico: Angular 21 y más</source>
+        <target>Stack Teknologikoa: Angular 21 eta gehiago</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.title">
+      <segment state="translated">
+        <source>Consideraciones técnicas</source>
+        <target>Gogoeta Teknikoak</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.vibecoding.content">
+      <segment state="translated">
+        <source> Este proyecto es un caso práctico de <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong class=&quot;text-indigo-400&quot;&gt;" dispEnd="&lt;/strong&gt;">Vibe Coding</pc>: el desarrollo de aplicaciones se potencia y acelera con un modelo de inteligencia artificial. Elimina las partes más tediosas de la implementación y nos permite centrarnos en lo que importa, buscar soluciones que resuelvan problemas. En este caso hemos utilizado herramientas como <pc id="1" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Google Antigravity</pc> y <pc id="2" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Gemini CLI</pc> utilizando agentes en paralelo que han implementado todos los detalles del proyecto. </source>
+        <target> Proiektu hau <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong class=&quot;text-indigo-400&quot;&gt;" dispEnd="&lt;/strong&gt;">Vibe Coding</pc>-en kasu praktiko bat da: aplikazioen garapena adimen artifizialeko eredu batekin indartzen eta azeleratzen da. Inplementazioaren zatirik nekagarrienak ezabatzen ditu eta garrantzitsua denari zentratzea ahalbidetzen digu, arazoak konpontzen dituzten soluzioak bilatzea. Kasu honetan <pc id="1" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Google Antigravity</pc> eta <pc id="2" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Gemini CLI</pc> bezalako tresnak erabili ditugu proiektuaren xehetasun guztiak inplementatu dituzten agente paraleloak erabiliz. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.vibecoding.title">
+      <segment state="translated">
+        <source>Vibe Coding: un nuevo paradigma</source>
+        <target>Vibe Coding: Paradigma berri bat</target>
+      </segment>
+    </unit>
+    <unit id="input.age.over65">
+      <segment state="translated">
+        <source>Mayor 65</source>
+        <target>65 baino zaharragoa</target>
+      </segment>
+    </unit>
+    <unit id="input.age.over75">
+      <segment state="translated">
+        <source>Mayor 75</source>
+        <target>75 baino zaharragoa</target>
+      </segment>
+    </unit>
+    <unit id="input.age.under65">
+      <segment state="translated">
+        <source>Menor 65</source>
+        <target>65 baino gazteagoa</target>
+      </segment>
+    </unit>
+    <unit id="input.btn.custom">
+      <segment state="translated">
+        <source>Personalizado</source>
+        <target>Pertsonalizatua</target>
+      </segment>
+    </unit>
+    <unit id="input.button.viewResults">
+      <segment state="translated">
+        <source>Ver Resultados</source>
+        <target>Ikusi Emaitzak</target>
+      </segment>
+    </unit>
+    <unit id="input.charity.amount">
+      <segment state="translated">
+        <source>Importe Anual</source>
+        <target>Urteko Zenbatekoa</target>
+      </segment>
+    </unit>
+    <unit id="input.check.expensesDiff">
+      <segment state="translated">
+        <source>Aplicar 5% Gastos Difícil Justif.</source>
+        <target>Aplikatu %5 Justifikatzen Zailak diren Gastuak</target>
+      </segment>
+    </unit>
+    <unit id="input.check.societario">
+      <segment state="translated">
+        <source>Autónomo Societario</source>
+        <target>Sozietate-autonomoa</target>
+      </segment>
+    </unit>
+    <unit id="input.details.concept">
+      <segment state="translated">
+        <source>Concepto</source>
+        <target>Kontzeptua</target>
+      </segment>
+    </unit>
+    <unit id="input.details.freq.annual">
+      <segment state="translated">
+        <source>Anual</source>
+        <target>Urtekoa</target>
+      </segment>
+    </unit>
+    <unit id="input.details.freq.monthly">
+      <segment state="translated">
+        <source>Mensual</source>
+        <target>Hilerokoa</target>
+      </segment>
+    </unit>
+    <unit id="input.details.title">
+      <segment state="translated">
+        <source>Desglose de Gastos (Opcional)</source>
+        <target>Gastuen Xehetasuna (Aukerakoa)</target>
+      </segment>
+    </unit>
+    <unit id="input.details.total">
+      <segment state="translated">
+        <source>Total Detallado:</source>
+        <target>Guztira Xehatua:</target>
+      </segment>
+    </unit>
+    <unit id="input.details.yearly">
+      <segment state="translated">
+        <source>anual</source>
+        <target>urtekoa</target>
+      </segment>
+    </unit>
+    <unit id="input.health.annualCost">
+      <segment state="translated">
+        <source>Gastos Anuales</source>
+        <target>Urteko Gastuak</target>
+      </segment>
+    </unit>
+    <unit id="input.health.insuredCount">
+      <segment state="translated">
+        <source>Nº Asegurados</source>
+        <target>Aseguratu Kopurua</target>
+      </segment>
+    </unit>
+    <unit id="input.help.charity">
+      <segment state="translated">
+        <source>Deducción: 80% de los primeros 250€ y 40% del resto.</source>
+        <target>Kenkaria: Lehenengo 250€-en %80 eta gainerakoaren %40.</target>
+      </segment>
+    </unit>
+    <unit id="input.help.health">
+      <segment state="translated">
+        <source>Deducible hasta 500€ por persona (titular, cónyuge e hijos &lt; 25 años).</source>
+        <target>500€-ra arte kengarria pertsonako (titularra, ezkontidea eta seme-alabak &lt; 25 urte).</target>
+      </segment>
+    </unit>
+    <unit id="input.help.pension">
+      <segment state="translated">
+        <source>Límites: 1.500€ (indiv.) + 4.250€ (empleo). Máx 30% Rend. Neto.</source>
+        <target>Mugak: 1.500€ (indib.) + 4.250€ (enplegua). Geh. Etekin Garbiaren %30.</target>
+      </segment>
+    </unit>
+    <unit id="input.help.quota">
+      <segment state="translated">
+        <source>Dejar vacío para auto-cálculo</source>
+        <target>Utzi hutsik auto-kalkulurako</target>
+      </segment>
+    </unit>
+    <unit id="input.label.expenses">
+      <segment state="translated">
+        <source>Gastos Anuales</source>
+        <target>Urteko Gastuak</target>
+      </segment>
+    </unit>
+    <unit id="input.label.grossIncome">
+      <segment state="translated">
+        <source>Total Facturado (Base)</source>
+        <target>Fakturatutako Guztizkoa (Oinarria)</target>
+      </segment>
+    </unit>
+    <unit id="input.label.quota">
+      <segment state="translated">
+        <source>Cuota Autónomos</source>
+        <target>Autonomoen Kuota</target>
+      </segment>
+    </unit>
+    <unit id="input.label.withholding">
+      <segment state="translated">
+        <source>Retenciones</source>
+        <target>Atxikipenak</target>
+      </segment>
+    </unit>
+    <unit id="input.pension.autonomous">
+      <segment state="translated">
+        <source>P. Autónomo</source>
+        <target>P. Autonomoa</target>
+      </segment>
+    </unit>
+    <unit id="input.pension.individual">
+      <segment state="translated">
+        <source>P. Individual</source>
+        <target>P. Indibiduala</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.auto">
+      <segment state="translated">
+        <source>Auto</source>
+        <target>Auto</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.customWithholding">
+      <segment state="translated">
+        <source>Ej. 2000</source>
+        <target>Adib. 2000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.expenses">
+      <segment state="translated">
+        <source>Ej. 2.000</source>
+        <target>Adib. 2.000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.grossIncome">
+      <segment state="translated">
+        <source>Ej. 45.000</source>
+        <target>Adib. 45.000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.healthInsurance">
+      <segment state="translated">
+        <source>Ej. 600</source>
+        <target>Adib. 600</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.max1500">
+      <segment state="translated">
+        <source>Máx 1.500</source>
+        <target>Geh. 1.500</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.max4250">
+      <segment state="translated">
+        <source>Máx 4.250</source>
+        <target>Geh. 4.250</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.ngoDonations">
+      <segment state="translated">
+        <source>Ej. 300</source>
+        <target>Adib. 300</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.age">
+      <segment state="translated">
+        <source>Edad</source>
+        <target>Adina</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.children">
+      <segment state="translated">
+        <source>Hijos (&lt; 25)</source>
+        <target>Seme-alabak (&lt; 25)</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.region">
+      <segment state="translated">
+        <source>Comunidad Autónoma</source>
+        <target>Autonomia Erkidegoa</target>
+      </segment>
+    </unit>
+    <unit id="input.section.charity">
+      <segment state="translated">
+        <source>Donaciones ONG</source>
+        <target>GKE Dohaintzak</target>
+      </segment>
+    </unit>
+    <unit id="input.section.economic">
+      <segment state="translated">
+        <source>Datos Económicos</source>
+        <target>Datu Ekonomikoak</target>
+      </segment>
+    </unit>
+    <unit id="input.section.health">
+      <segment state="translated">
+        <source>Seguro Médico</source>
+        <target>Aseguru Medikoa</target>
+      </segment>
+    </unit>
+    <unit id="input.section.pension">
+      <segment state="translated">
+        <source>Planes de Pensiones</source>
+        <target>Pentsio Planak</target>
+      </segment>
+    </unit>
+    <unit id="input.section.profile">
+      <segment state="translated">
+        <source>Perfil Fiscal</source>
+        <target>Profil Fiskala</target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.applied">
+      <segment state="translated">
+        <source>Retención aplicada: </source>
+        <target>Aplikatutako atxikipena: </target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.equivalent">
+      <segment state="translated">
+        <source>Equivale al </source>
+        <target>Honen baliokidea: </target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.help.custom">
+      <segment state="translated">
+        <source>Introduce el total anual retenido en tus facturas.</source>
+        <target>Sartu zure fakturetan atxikitako urteko guztizkoa.</target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.ofBase">
+      <segment state="translated">
+        <source> del total facturado.</source>
+        <target> fakturatutako guztizkoaren.</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.cancel">
+      <segment state="translated">
+        <source>Cancelar</source>
+        <target>Utzi</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.confirm">
+      <segment state="translated">
+        <source>Recargar</source>
+        <target>Birkargatu</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.message">
+      <segment state="translated">
+        <source>Hay una nueva versión de la aplicación disponible. ¿Quieres recargar la página para actualizar?</source>
+        <target>Aplikazioaren bertsio berri bat eskuragarri dago. Orria birkargatu nahi duzu eguneratzeko?</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.title">
+      <segment state="translated">
+        <source>Actualización disponible</source>
+        <target>Eguneraketa eskuragarri</target>
+      </segment>
+    </unit>
+    <unit id="region.andalucia">
+      <segment state="translated">
+        <source>Andalucía</source>
+        <target>Andaluzia</target>
+      </segment>
+    </unit>
+    <unit id="region.canarias">
+      <segment state="translated">
+        <source>Canarias</source>
+        <target>Kanariak</target>
+      </segment>
+    </unit>
+    <unit id="region.cataluna">
+      <segment state="translated">
+        <source>Cataluña</source>
+        <target>Katalunia</target>
+      </segment>
+    </unit>
+    <unit id="region.common">
+      <segment state="translated">
+        <source>Estatal / Otras Comunidades</source>
+        <target>Estatukoa / Beste Erkidego batzuk</target>
+      </segment>
+    </unit>
+    <unit id="region.galicia">
+      <segment state="translated">
+        <source>Galicia</source>
+        <target>Galizia</target>
+      </segment>
+    </unit>
+    <unit id="region.madrid">
+      <segment state="translated">
+        <source>Comunidad de Madrid</source>
+        <target>Madrilgo Erkidegoa</target>
+      </segment>
+    </unit>
+    <unit id="region.murcia">
+      <segment state="translated">
+        <source>Región de Murcia</source>
+        <target>Murtziako Eskualdea</target>
+      </segment>
+    </unit>
+    <unit id="region.valencia">
+      <segment state="translated">
+        <source>Comunidad Valenciana</source>
+        <target>Valentziako Erkidegoa</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.autonomousQuota">
+      <segment state="translated">
+        <source>Cuota de Autónomos</source>
+        <target>Autonomoen Kuota</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.deductibleExpenses">
+      <segment state="translated">
+        <source>Gastos Deducibles</source>
+        <target>Gastu Kengarriak</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.diffJustification">
+      <segment state="translated">
+        <source>Gastos de Difícil Justificación (5%)</source>
+        <target>Justifikatzen Zailak diren Gastuak (%5)</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.grossRevenue">
+      <segment state="translated">
+        <source>Facturación Bruta</source>
+        <target>Fakturazio Gordina</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.lowIncome">
+      <segment state="translated">
+        <source>Reducción de Contribuyentes Bajos</source>
+        <target>Zergadun Baxuen Murrizketa</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.taxableBase">
+      <segment state="translated">
+        <source>Base Liquidable</source>
+        <target>Oinarri Likidagarria</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.title">
+      <segment state="translated">
+        <source>Desglose de Base Liquidable</source>
+        <target>Oinarri Likidagarriaren Xehetasuna</target>
+      </segment>
+    </unit>
+    <unit id="results.consolidated.subtitle">
+      <segment state="translated">
+        <source>Suma de tipos Estatal + Autonómico para cada tramo.</source>
+        <target>Estatu + Autonomia Erkidegoko tasen batura tarte bakoitzerako.</target>
+      </segment>
+    </unit>
+    <unit id="results.consolidated.title">
+      <segment state="translated">
+        <source>Tramos IRPF Consolidados</source>
+        <target>PFEZ Tarte Bateratuak</target>
+      </segment>
+    </unit>
+    <unit id="results.effectiveRate.label">
+      <segment state="translated">
+        <source>Tipo Medio: </source>
+        <target>Batez besteko tasa: </target>
+      </segment>
+    </unit>
+    <unit id="results.finalResult">
+      <segment state="translated">
+        <source> Resultado Final </source>
+        <target> Azken Emaitza </target>
+      </segment>
+    </unit>
+    <unit id="results.marginal.text">
+      <segment state="translated">
+        <source>El Tipo Marginal (máximo que pagas) es del</source>
+        <target>Tasa Marjinala (gehien ordaintzen duzuna) da</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.health">
+      <segment state="translated">
+        <source>Reducción Seguro Médico</source>
+        <target>Aseguru Medikoaren Murrizketa</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.ngo">
+      <segment state="translated">
+        <source>Deducción Donaciones</source>
+        <target>Dohaintzen Kenkaria</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.pension">
+      <segment state="translated">
+        <source>Reducción Plan Pensiones</source>
+        <target>Pentsio Planaren Murrizketa</target>
+      </segment>
+    </unit>
+    <unit id="results.regional.subtitle">
+      <segment state="translated">
+        <source>Escala de la comunidad seleccionada.</source>
+        <target>Hautatutako erkidegoko eskala.</target>
+      </segment>
+    </unit>
+    <unit id="results.regional.title">
+      <segment state="translated">
+        <source>Tramo Autonómico</source>
+        <target>Autonomia Erkidegoko Tartea</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.annualQuota">
+      <segment state="translated">
+        <source>Cuota Anual</source>
+        <target>Urteko Kuota</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.brackets.subtitle">
+      <segment state="translated">
+        <source>Cuotas según rendimientos netos mensuales.</source>
+        <target>Kuotak hileko etekin garbien arabera.</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.brackets.title">
+      <segment state="translated">
+        <source>Tramos de Cotización RETA 2025</source>
+        <target>RETA 2025 Kotizazio Tarteak</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.overpaying.detail">
+      <segment state="translated">
+        <source> Estás cotizando por encima del mínimo obligatorio. Esto es voluntario y mejora tus prestaciones futuras. </source>
+        <target> Derrigorrezko gutxienekotik gora kotizatzen ari zara. Boluntarioa da eta zure etorkizuneko prestazioak hobetzen ditu. </target>
+      </segment>
+    </unit>
+    <unit id="results.ss.retaRate">
+      <segment state="translated">
+        <source>Tipo Cotización</source>
+        <target>Kotizazio Tasa</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.correct">
+      <segment state="translated">
+        <source>CUOTA CORRECTA</source>
+        <target>KUOTA ZUZENA</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.overpaying">
+      <segment state="translated">
+        <source>APORTACIÓN EXTRA</source>
+        <target>EKARPEN GEHIGARRIA</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.underpaying">
+      <segment state="translated">
+        <source>REGULARIZACIÓN PENDIENTE</source>
+        <target>ERREGULARIZAZIO ZAIN</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.bracket">
+      <segment state="translated">
+        <source>Tramo Rendimientos</source>
+        <target>Etekin Tartea</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.contributionBase">
+      <segment state="translated">
+        <source>Base Cotización</source>
+        <target>Kotizazio Oinarria</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.monthlyQuota">
+      <segment state="translated">
+        <source>Cuota Mensual</source>
+        <target>Hileko Kuota</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.theoreticalQuota">
+      <segment state="translated">
+        <source>Cuota Teórica</source>
+        <target>Kuota Teorikoa</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.title">
+      <segment state="translated">
+        <source> Cuota Seguridad Social </source>
+        <target> Gizarte Segurantzako Kuota </target>
+      </segment>
+    </unit>
+    <unit id="results.ss.underpaying.detail">
+      <segment state="translated">
+        <source> Estás cotizando por debajo de tus ingresos reales. Esto podría generar una regularización posterior de <ph id="0" equiv="INTERPOLATION" disp="{{ Math.abs(res.autonomousQuotaDiff) | appCurrency }}"/> anuales. </source>
+        <target> Zure benetako diru-sarreren azpitik kotizatzen ari zara. Honek geroagoko erregularizazio bat sor dezake <ph id="0" equiv="INTERPOLATION" disp="{{ Math.abs(res.autonomousQuotaDiff) | appCurrency }}"/> urteko. </target>
+      </segment>
+    </unit>
+    <unit id="results.state.subtitle">
+      <segment state="translated">
+        <source>Escala válida para todo el territorio.</source>
+        <target>Lurralde osorako baliozkoa den eskala.</target>
+      </segment>
+    </unit>
+    <unit id="results.state.title">
+      <segment state="translated">
+        <source>Tramo Estatal</source>
+        <target>Estatuko Tartea</target>
+      </segment>
+    </unit>
+    <unit id="results.status.pay">
+      <segment state="translated">
+        <source>A PAGAR</source>
+        <target>ORDAINTZEKO</target>
+      </segment>
+    </unit>
+    <unit id="results.status.refund">
+      <segment state="translated">
+        <source>A DEVOLVER</source>
+        <target>ITZULTZEKO</target>
+      </segment>
+    </unit>
+    <unit id="results.tab.global">
+      <segment state="translated">
+        <source> Tabla Global Agregada </source>
+        <target> Taula Global Agregatua </target>
+      </segment>
+    </unit>
+    <unit id="results.tab.split">
+      <segment state="translated">
+        <source> Desglose Estatal/Autonómico </source>
+        <target> Estatuko/Autonomia Erkidegoko Xehetasuna </target>
+      </segment>
+    </unit>
+    <unit id="results.table.amount">
+      <segment state="translated">
+        <source>Importe</source>
+        <target>Zenbatekoa</target>
+      </segment>
+    </unit>
+    <unit id="results.table.base">
+      <segment state="translated">
+        <source>Base</source>
+        <target>Oinarria</target>
+      </segment>
+    </unit>
+    <unit id="results.table.baseInBracket">
+      <segment state="translated">
+        <source>Base en Tramo</source>
+        <target>Oinarria Tartean</target>
+      </segment>
+    </unit>
+    <unit id="results.table.bracket">
+      <segment state="translated">
+        <source>Tramo</source>
+        <target>Tartea</target>
+      </segment>
+    </unit>
+    <unit id="results.table.bracketRent">
+      <segment state="translated">
+        <source>Tramo de Renta</source>
+        <target>Errenta Tartea</target>
+      </segment>
+    </unit>
+    <unit id="results.table.concept">
+      <segment state="translated">
+        <source>Concepto</source>
+        <target>Kontzeptua</target>
+      </segment>
+    </unit>
+    <unit id="results.table.quota">
+      <segment state="translated">
+        <source>Cuota</source>
+        <target>Kuota</target>
+      </segment>
+    </unit>
+    <unit id="results.table.type">
+      <segment state="translated">
+        <source>Tipo</source>
+        <target>Tasa</target>
+      </segment>
+    </unit>
+    <unit id="results.table.typeGlobal">
+      <segment state="translated">
+        <source>Tipo Global</source>
+        <target>Tasa Globala</target>
+      </segment>
+    </unit>
+    <unit id="results.totalQuota">
+      <segment state="translated">
+        <source>Cuota Total</source>
+        <target>Kuota Guztira</target>
+      </segment>
+    </unit>
+    <unit id="results.withholding.custom">
+      <segment state="translated">
+        <source>Personalizada</source>
+        <target>Pertsonalizatua</target>
+      </segment>
+    </unit>
+    <unit id="results.withholding.label">
+      <segment state="translated">
+        <source>Retenciones</source>
+        <target>Atxikipenak</target>
+      </segment>
+    </unit>
+    <unit id="save.button">
+      <segment state="translated">
+        <source>Guardar</source>
+        <target>Gorde</target>
+      </segment>
+    </unit>
+    <unit id="save.placeholder.name">
+      <segment state="translated">
+        <source>Nombre del escenario...</source>
+        <target>Eszenatokiaren izena...</target>
+      </segment>
+    </unit>
+    <unit id="save.title">
+      <segment state="translated">
+        <source>Guardar Escenario</source>
+        <target>Gorde Eszenatokia</target>
+      </segment>
+    </unit>
+    <unit id="stepper.data">
+      <segment state="translated">
+        <source>Datos</source>
+        <target>Datuak</target>
+      </segment>
+    </unit>
+    <unit id="stepper.info">
+      <segment state="translated">
+        <source>Info</source>
+        <target>Info</target>
+      </segment>
+    </unit>
+    <unit id="stepper.results">
+      <segment state="translated">
+        <source>Resultados</source>
+        <target>Emaitzak</target>
+      </segment>
+    </unit>
+    <unit id="toast.close">
+      <segment state="translated">
+        <source>Cerrar notificación</source>
+        <target>Itxi jakinarazpena</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

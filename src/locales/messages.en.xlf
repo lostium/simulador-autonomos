@@ -1,0 +1,1060 @@
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="es" trgLang="en">
+  <file id="ngi18n" original="ng.template">
+    <unit id="disclaimer.close">
+      <segment state="translated">
+        <source>Cerrar aviso</source>
+        <target>Close warning</target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.open">
+      <segment state="translated">
+        <source>Mostrar aviso importante</source>
+        <target>Show important warning</target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.text">
+      <segment state="translated">
+        <source> Este simulador es un <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experimento de Lostium</pc> hecho con <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">vibe coding</pc> y no ofrece ningún tipo de garantía. En ningún caso hay fiabilidad de que los datos mostrados sean correctos para tu caso particular. Además, este simulador <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no contempla los regímenes forales de País Vasco y Navarra</pc>, ya que disponen de haciendas propias y normativa fiscal específica. </source>
+        <target> This simulator is a <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Lostium experiment</pc> made with <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">vibe coding</pc> and offers no warranty of any kind. Under no circumstances is there any reliability that the data shown is correct for your particular case. Furthermore, this simulator <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">does not cover the foral regimes of the Basque Country and Navarre</pc>, as they have their own treasuries and specific tax regulations. </target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.title">
+      <segment state="translated">
+        <source>Aviso Importante</source>
+        <target>Important Warning</target>
+      </segment>
+    </unit>
+    <unit id="header.subtitle">
+      <segment state="translated">
+        <source>Para Autónomos en España</source>
+        <target>For Freelancers in Spain</target>
+      </segment>
+    </unit>
+    <unit id="header.title">
+      <segment state="translated">
+        <source>Simulador Renta </source>
+        <target>Income Tax Simulator </target>
+      </segment>
+    </unit>
+    <unit id="history.btn.clearAll.title">
+      <segment state="translated">
+        <source>Eliminar todo</source>
+        <target>Clear all</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.delete.title">
+      <segment state="translated">
+        <source>Eliminar</source>
+        <target>Delete</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.export.title">
+      <segment state="translated">
+        <source>Exportar</source>
+        <target>Export</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.exportOne.title">
+      <segment state="translated">
+        <source>Exportar esta simulación</source>
+        <target>Export this simulation</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.import.title">
+      <segment state="translated">
+        <source>Importar</source>
+        <target>Import</target>
+      </segment>
+    </unit>
+    <unit id="history.import.subtitle">
+      <segment state="translated">
+        <source> Arrastra tus archivos JSON aquí o haz clic para buscarlos </source>
+        <target> Drag your JSON files here or click to browse </target>
+      </segment>
+    </unit>
+    <unit id="history.import.title">
+      <segment state="translated">
+        <source>Importar Simulaciones</source>
+        <target>Import Simulations</target>
+      </segment>
+    </unit>
+    <unit id="history.title">
+      <segment state="translated">
+        <source>Historial</source>
+        <target>History</target>
+      </segment>
+    </unit>
+    <unit id="info.cta.button">
+      <segment state="translated">
+        <source>Comenzar Simulación</source>
+        <target>Start Simulation</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.p1">
+      <segment state="translated">
+        <source>Antes de empezar, aclaremos el error más común: el IVA <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no pinta nada aquí</pc>. No es un ingreso, es un impuesto al consumo que paga tu cliente.</source>
+        <target>Before starting, let&apos;s clear up the most common mistake: VAT <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">has no place here</pc>. It is not income; it is a consumption tax paid by your client.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.p2">
+      <segment state="translated">
+        <source>Tú actúas simplemente como un &quot;recaudador&quot; temporal: lo cobras y luego se lo entregas intacto a Hacienda. No entra en el cálculo de tus beneficios ni del IRPF.</source>
+        <target>You simply act as a temporary &quot;collector&quot;: you collect it and then hand it over intact to the Tax Agency. It does not enter into the calculation of your profits or IRPF.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.rule">
+      <segment state="translated">
+        <source>Regla de oro: Para usar este simulador (y para tu vida), mira siempre la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Imponible</pc> de tus facturas, nunca el total con IVA.</source>
+        <target>Golden rule: To use this simulator (and for your life), always look at the <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Taxable Base</pc> of your invoices, never the total with VAT.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.title">
+      <segment state="translated">
+        <source>6. El IVA: un dinero que nunca fue tuyo</source>
+        <target>6. VAT: money that was never yours</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.intro">
+      <segment state="translated">
+        <source>No pagas impuestos por todo lo que facturas, sino solo por lo que realmente ganas (tu beneficio real). Para calcular tu capacidad de aportación:</source>
+        <target>You don&apos;t pay taxes on everything you invoice, but only on what you really earn (your real profit). To calculate your contribution capacity:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.diff">
+      <segment state="translated">
+        <source>Se aplica un descuento automático del 5% para cubrir esos pequeños gastos difíciles de justificar.</source>
+        <target>An automatic 5% discount is applied to cover those small expenses that are difficult to justify.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.expenses">
+      <segment state="translated">
+        <source>Restamos los gastos necesarios para tu actividad: cuota de autónomos, servicios, seguro médico, etc.</source>
+        <target>We subtract the necessary expenses for your activity: self-employed quota, services, health insurance, etc.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.reduction">
+      <segment state="translated">
+        <source>Si tus beneficios son ajustados, cuentas con una reducción extra de apoyo.</source>
+        <target>If your profits are tight, you have an extra reduction for support.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.summary">
+      <segment state="translated">
+        <source>El resultado es la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Liquidable</pc>, que representa tu capacidad económica real y sobre la que se calcula tu contribución.</source>
+        <target>The result is the <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Taxable Base</pc>, which represents your real economic capacity and on which your contribution is calculated.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.title">
+      <segment state="translated">
+        <source>1. ¿Sobre qué beneficios aportas? (La base)</source>
+        <target>1. What profits do you contribute on? (The base)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.intro">
+      <segment state="translated">
+        <source>El IRPF funciona por escalones. No pagas lo mismo por el primer euro que ganas que por el último:</source>
+        <target>IRPF works in brackets. You don&apos;t pay the same for the first euro you earn as for the last:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.list.high">
+      <segment state="translated">
+        <source>Si ganas mucho, los últimos euros pagan bastante más (casi la mitad).</source>
+        <target>If you earn a lot, the last euros pay quite a bit more (almost half).</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.list.low">
+      <segment state="translated">
+        <source>Los primeros euros pagan poquito.</source>
+        <target>The first euros pay very little.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.summary">
+      <segment state="translated">
+        <source>Además, el impuesto tiene dos dueños: la mitad va para el <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Estado</pc> y la otra mitad para tu <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Comunidad Autónoma</pc>. Por eso, dependiendo de dónde vivas, la factura final cambia.</source>
+        <target>In addition, the tax has two owners: half goes to the <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">State</pc> and the other half to your <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Autonomous Community</pc>. Therefore, depending on where you live, the final bill changes.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.title">
+      <segment state="translated">
+        <source>3. La escalera de los impuestos (Los tramos)</source>
+        <target>3. The tax ladder (The brackets)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.content.p1">
+      <segment state="translated">
+        <source>El sistema reconoce que una parte de tus ingresos es esencial para cubrir tus necesidades básicas y las de tu familia, por lo que esa cantidad queda exenta de tributación.</source>
+        <target>The system recognizes that a part of your income is essential to cover your basic needs and those of your family, so that amount remains exempt from taxation.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.content.p2">
+      <segment state="translated">
+        <source>Partimos de unos <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">5.550€</pc> iniciales, cifra que aumenta si tienes hijos a cargo o según tu edad. En la práctica, se calcula el impuesto que correspondería a esa cantidad y se resta de tu cuota, garantizando que ese mínimo vital no tribute.</source>
+        <target>We start from an initial <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">€5,550</pc>, a figure that increases if you have dependent children or depending on your age. In practice, the tax corresponding to that amount is calculated and subtracted from your quota, guaranteeing that this vital minimum is not taxed.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.title">
+      <segment state="translated">
+        <source>4. Tu mínimo vital está protegido (Mínimos)</source>
+        <target>4. Your vital minimum is protected (Minimums)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.intro">
+      <segment state="translated">
+        <source>Llega la hora de la verdad. Calculamos el impuesto total y miramos qué has pagado ya:</source>
+        <target>The moment of truth arrives. We calculate the total tax and look at what you have already paid:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.list.deductions">
+      <segment state="translated">
+        <source>Restamos deducciones si eres solidario (donaciones a ONGs).</source>
+        <target>We subtract deductions if you are supportive (donations to NGOs).</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.list.retentions">
+      <segment state="translated">
+        <source>Restamos las <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Retenciones</pc>. Lo habitual es haber adelantado un 15% en tus facturas, aunque si eres &quot;nuevo autónomo&quot; (primeros 3 años) será solo un 7%. También puedes indicar la cantidad exacta que has aportado si llevas tu propia contabilidad.</source>
+        <target>We subtract <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Withholdings</pc>. It is usual to have advanced 15% on your invoices, although if you are a &quot;new freelancer&quot; (first 3 years) it will be only 7%. You can also indicate the exact amount you have contributed if you keep your own accounting.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.result">
+      <segment state="translated">
+        <source>Si has adelantado más dinero del que te tocaba, Hacienda te <pc id="0" equivStart="START_TAG_SPAN" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-emerald-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">devuelve</pc> la diferencia. Si te has quedado corto... toca <pc id="1" equivStart="START_TAG_SPAN_1" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-rose-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">pagar</pc>.</source>
+        <target>If you have advanced more money than required, the Tax Agency <pc id="0" equivStart="START_TAG_SPAN" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-emerald-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">refunds</pc> the difference. If you fell short... time to <pc id="1" equivStart="START_TAG_SPAN_1" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-rose-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">pay</pc>.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.title">
+      <segment state="translated">
+        <source>5. La cuenta final: ¿Pagar o devolver?</source>
+        <target>5. The final bill: pay or refund?</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q_reta.content">
+      <segment state="translated">
+        <source> El simulador incorpora automáticamente el cálculo de la cuota según el sistema de ingresos reales que aplicó durante el año pasado (2025). Al introducir tu previsión de ingresos, la herramienta estima la cuota mínima del tramo que te correspondió y la resta como un gasto deducible para mayor precisión en el cálculo final. </source>
+        <target> The simulator automatically incorporates the quota calculation according to the real income system applied during the last year (2025). By entering your income forecast, the tool estimates the minimum quota for the bracket that corresponded to you and subtracts it as a deductible expense for greater precision in the final calculation. </target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q_reta.title">
+      <segment state="translated">
+        <source>2. La Cuota de Autónomos (RETA) de 2025</source>
+        <target>2. The Self-Employed Quota (RETA) of 2025</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.title">
+      <segment state="translated">
+        <source>El IRPF explicado para humanos</source>
+        <target>IRPF explained for humans</target>
+      </segment>
+    </unit>
+    <unit id="info.hero.description.purpose">
+      <segment state="translated">
+        <source> Este <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">simulador simplificado</pc> es un <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experimento de Lostium</pc> que realiza una estimación de tu IRPF basándose en tus <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">ingresos, retenciones y deducciones principales</pc>. También calcula automáticamente tu <pc id="3" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">cuota de autónomos de 2025</pc> (el año pasado) bajo el sistema de cotización por ingresos reales. </source>
+        <target> This <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">simplified simulator</pc> is a <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Lostium experiment</pc> that estimates your Personal Income Tax based on your <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">income, withholdings, and main deductions</pc>. It also automatically calculates your <pc id="3" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">2025 self-employed quota</pc> (last year) under the real income contribution system. </target>
+      </segment>
+    </unit>
+    <unit id="info.hero.description.origin">
+      <segment state="translated">
+        <source> Surge de la necesidad de prever el resultado de la Declaración de la Renta de forma ágil, sin depender de complejas hojas de cálculo. Aunque fue concebido para <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">autónomos societarios</pc> en estimación directa simplificada, su lógica es útil para cualquier trabajador por cuenta propia. </source>
+        <target> It arises from the need to predict the outcome of the Tax Return quickly, without relying on complex spreadsheets. Although conceived for <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">corporate freelancers</pc> in simplified direct estimation, its logic is useful for any self-employed worker. </target>
+      </segment>
+    </unit>
+    <unit id="info.hero.mode">
+      <segment state="translated">
+        <source>IRPF y cuota de autónomos de 2025</source>
+        <target>Self-Employed Tax 2025</target>
+      </segment>
+    </unit>
+    <unit id="info.hero.title">
+      <segment state="translated">
+        <source>Calcula tu </source>
+        <target>Calculate your </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.context.content">
+      <segment state="translated">
+        <source> Los modelos de IA dependen de sus datos de entrenamiento, que a menudo contienen información desactualizada. Esto puede llevar al uso de pautas obsoletas o &quot;deprecadas&quot;. Para evitarlo, es fundamental <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">inyectar el contexto de la documentación técnica más reciente</pc>, &quot;re-educando&quot; al modelo en tiempo real para que ignore viejos hábitos y aplique las últimas novedades tecnológicas. </source>
+        <target> AI models depend on their training data, which often contain outdated information. This can lead to the use of obsolete or &quot;deprecated&quot; patterns. To avoid this, it is fundamental to <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">inject the context of the latest technical documentation</pc>, &quot;re-educating&quot; the model in real-time so it ignores old habits and applies the latest technological developments. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.context.title">
+      <segment state="translated">
+        <source>El reto del conocimiento: contexto vs. entrenamiento</source>
+        <target>The Knowledge Challenge: Context vs. Training</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.methodology.content">
+      <segment state="translated">
+        <source> El éxito depende de dos pilares: una <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">definición clara de especificaciones</pc> y una rigurosa <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">supervisión humana</pc>. Nuestro rol se centra en validar cada entrega de la IA, corrigiendo desviaciones y asegurando que el producto final cumpla con los estándares de calidad más exigentes. </source>
+        <target> Success depends on two pillars: a <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">clear definition of specifications</pc> and rigorous <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">human supervision</pc>. Our role focuses on validating each AI delivery, correcting deviations and ensuring that the final product meets the most demanding quality standards. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.methodology.title">
+      <segment state="translated">
+        <source>Metodología: definición y supervisión</source>
+        <target>Methodology: Definition and Supervision</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.process.content">
+      <segment state="translated">
+        <source> El desarrollo evolucionó desde un prototipo <pc id="0" equivStart="START_EMPHASISED_TEXT" equivEnd="CLOSE_EMPHASISED_TEXT" type="fmt" dispStart="&lt;em&gt;" dispEnd="&lt;/em&gt;">One Shot</pc> en HTML/JS hasta una arquitectura profesional en <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>. La conversión no fue automática; requirió un trabajo de <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">refinamiento y supervisión</pc> humana para guiar a la IA, asegurando que la adaptación cumpliera estrictamente con las mejores prácticas y patrones del framework. </source>
+        <target> Development evolved from a <pc id="0" equivStart="START_EMPHASISED_TEXT" equivEnd="CLOSE_EMPHASISED_TEXT" type="fmt" dispStart="&lt;em&gt;" dispEnd="&lt;/em&gt;">One Shot</pc> prototype in HTML/JS to a professional architecture in <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>. The conversion was not automatic; it required human <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">refinement and supervision</pc> to guide the AI, ensuring the adaptation strictly followed framework best practices and patterns. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.process.title">
+      <segment state="translated">
+        <source>One Shot: de prototipo a producción</source>
+        <target>One Shot: From Prototype to Production</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.security.content">
+      <segment state="translated">
+        <source> Esta aplicación funciona <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">100% en local</pc> dentro de tu navegador. Ningún dato fiscal, nombre o cifra se envía a servidores externos. Los cálculos se realizan en tu dispositivo y la información solo se guarda si decides usar la función de &quot;Historial&quot; (usando el almacenamiento local de tu navegador). </source>
+        <target> This application works <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">100% locally</pc> within your browser. No tax data, names, or figures are sent to external servers. Calculations are performed on your device and information is only saved if you decide to use the &quot;History&quot; function (using your browser&apos;s local storage). </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.security.title">
+      <segment state="translated">
+        <source>Privacidad: tus datos no salen de aquí</source>
+        <target>Privacy: Your Data Stays Here</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.intro">
+      <segment state="translated">
+        <source> Arquitectura moderna diseñada para rendimiento y mantenibilidad: </source>
+        <target> Modern architecture designed for performance and maintainability: </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.core">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>: Standalone Components, Signals y Control Flow (@if/@for).</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>: Standalone Components, Signals, and Control Flow (@if/@for).</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.css">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Tailwind CSS 4</pc>: Estilado atómico con el nuevo motor Oxide de alto rendimiento.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Tailwind CSS 4</pc>: Atomic styling with the new high-performance Oxide engine.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.pwa">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Client-Side</pc>: Ejecución pura en JavaScript/TypeScript sin backend.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Client-Side</pc>: Pure execution in JavaScript/TypeScript without backend.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.state">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Signals</pc>: Gestión de estado reactiva y granular sin Zone.js.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Signals</pc>: Reactive and granular state management without Zone.js.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.title">
+      <segment state="translated">
+        <source>Stack tecnológico: Angular 21 y más</source>
+        <target>Tech Stack: Angular 21 and more</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.title">
+      <segment state="translated">
+        <source>Consideraciones técnicas</source>
+        <target>Technical Considerations</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.vibecoding.content">
+      <segment state="translated">
+        <source> Este proyecto es un caso práctico de <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong class=&quot;text-indigo-400&quot;&gt;" dispEnd="&lt;/strong&gt;">Vibe Coding</pc>: el desarrollo de aplicaciones se potencia y acelera con un modelo de inteligencia artificial. Elimina las partes más tediosas de la implementación y nos permite centrarnos en lo que importa, buscar soluciones que resuelvan problemas. En este caso hemos utilizado herramientas como <pc id="1" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Google Antigravity</pc> y <pc id="2" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Gemini CLI</pc> utilizando agentes en paralelo que han implementado todos los detalles del proyecto. </source>
+        <target> This project is a practical case of <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong class=&quot;text-indigo-400&quot;&gt;" dispEnd="&lt;/strong&gt;">Vibe Coding</pc>: application development is enhanced and accelerated with an artificial intelligence model. It eliminates the most tedious parts of implementation and allows us to focus on what matters, finding solutions that solve problems. In this case, we have used tools like <pc id="1" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Google Antigravity</pc> and <pc id="2" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Gemini CLI</pc> using parallel agents that have implemented all the project details. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.vibecoding.title">
+      <segment state="translated">
+        <source>Vibe Coding: un nuevo paradigma</source>
+        <target>Vibe Coding: A New Paradigm</target>
+      </segment>
+    </unit>
+    <unit id="input.age.over65">
+      <segment state="translated">
+        <source>Mayor 65</source>
+        <target>Over 65</target>
+      </segment>
+    </unit>
+    <unit id="input.age.over75">
+      <segment state="translated">
+        <source>Mayor 75</source>
+        <target>Over 75</target>
+      </segment>
+    </unit>
+    <unit id="input.age.under65">
+      <segment state="translated">
+        <source>Menor 65</source>
+        <target>Under 65</target>
+      </segment>
+    </unit>
+    <unit id="input.btn.custom">
+      <segment state="translated">
+        <source>Personalizado</source>
+        <target>Custom</target>
+      </segment>
+    </unit>
+    <unit id="input.button.viewResults">
+      <segment state="translated">
+        <source>Ver Resultados</source>
+        <target>View Results</target>
+      </segment>
+    </unit>
+    <unit id="input.charity.amount">
+      <segment state="translated">
+        <source>Importe Anual</source>
+        <target>Annual Amount</target>
+      </segment>
+    </unit>
+    <unit id="input.check.expensesDiff">
+      <segment state="translated">
+        <source>Aplicar 5% Gastos Difícil Justif.</source>
+        <target>Apply 5% Difficult Justif. Expenses</target>
+      </segment>
+    </unit>
+    <unit id="input.check.societario">
+      <segment state="translated">
+        <source>Autónomo Societario</source>
+        <target>Corporate Freelancer</target>
+      </segment>
+    </unit>
+    <unit id="input.details.concept">
+      <segment state="translated">
+        <source>Concepto</source>
+        <target>Concept</target>
+      </segment>
+    </unit>
+    <unit id="input.details.freq.annual">
+      <segment state="translated">
+        <source>Anual</source>
+        <target>Annual</target>
+      </segment>
+    </unit>
+    <unit id="input.details.freq.monthly">
+      <segment state="translated">
+        <source>Mensual</source>
+        <target>Monthly</target>
+      </segment>
+    </unit>
+    <unit id="input.details.title">
+      <segment state="translated">
+        <source>Desglose de Gastos (Opcional)</source>
+        <target>Expenses Breakdown (Optional)</target>
+      </segment>
+    </unit>
+    <unit id="input.details.total">
+      <segment state="translated">
+        <source>Total Detallado:</source>
+        <target>Detailed Total:</target>
+      </segment>
+    </unit>
+    <unit id="input.details.yearly">
+      <segment state="translated">
+        <source>anual</source>
+        <target>annual</target>
+      </segment>
+    </unit>
+    <unit id="input.health.annualCost">
+      <segment state="translated">
+        <source>Gastos Anuales</source>
+        <target>Annual Expenses</target>
+      </segment>
+    </unit>
+    <unit id="input.health.insuredCount">
+      <segment state="translated">
+        <source>Nº Asegurados</source>
+        <target>No. Insured</target>
+      </segment>
+    </unit>
+    <unit id="input.help.charity">
+      <segment state="translated">
+        <source>Deducción: 80% de los primeros 250€ y 40% del resto.</source>
+        <target>Deduction: 80% of the first €250 and 40% of the rest.</target>
+      </segment>
+    </unit>
+    <unit id="input.help.health">
+      <segment state="translated">
+        <source>Deducible hasta 500€ por persona (titular, cónyuge e hijos &lt; 25 años).</source>
+        <target>Deductible up to €500 per person (holder, spouse and children &lt; 25 years).</target>
+      </segment>
+    </unit>
+    <unit id="input.help.pension">
+      <segment state="translated">
+        <source>Límites: 1.500€ (indiv.) + 4.250€ (empleo). Máx 30% Rend. Neto.</source>
+        <target>Limits: €1,500 (indiv.) + €4,250 (employment). Max 30% Net Income.</target>
+      </segment>
+    </unit>
+    <unit id="input.help.quota">
+      <segment state="translated">
+        <source>Dejar vacío para auto-cálculo</source>
+        <target>Leave empty for auto-calculation</target>
+      </segment>
+    </unit>
+    <unit id="input.label.expenses">
+      <segment state="translated">
+        <source>Gastos Anuales</source>
+        <target>Annual Expenses</target>
+      </segment>
+    </unit>
+    <unit id="input.label.grossIncome">
+      <segment state="translated">
+        <source>Total Facturado (Base)</source>
+        <target>Total Invoiced (Base)</target>
+      </segment>
+    </unit>
+    <unit id="input.label.quota">
+      <segment state="translated">
+        <source>Cuota Autónomos</source>
+        <target>Self-Employed Quota</target>
+      </segment>
+    </unit>
+    <unit id="input.label.withholding">
+      <segment state="translated">
+        <source>Retenciones</source>
+        <target>Withholdings</target>
+      </segment>
+    </unit>
+    <unit id="input.pension.autonomous">
+      <segment state="translated">
+        <source>P. Autónomo</source>
+        <target>Self-Employed P.</target>
+      </segment>
+    </unit>
+    <unit id="input.pension.individual">
+      <segment state="translated">
+        <source>P. Individual</source>
+        <target>Individual P.</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.auto">
+      <segment state="translated">
+        <source>Auto</source>
+        <target>Auto</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.customWithholding">
+      <segment state="translated">
+        <source>Ej. 2000</source>
+        <target>Ex. 2000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.expenses">
+      <segment state="translated">
+        <source>Ej. 2.000</source>
+        <target>Ex. 2,000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.grossIncome">
+      <segment state="translated">
+        <source>Ej. 45.000</source>
+        <target>Ex. 45,000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.healthInsurance">
+      <segment state="translated">
+        <source>Ej. 600</source>
+        <target>Ex. 600</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.max1500">
+      <segment state="translated">
+        <source>Máx 1.500</source>
+        <target>Max 1,500</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.max4250">
+      <segment state="translated">
+        <source>Máx 4.250</source>
+        <target>Max 4,250</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.ngoDonations">
+      <segment state="translated">
+        <source>Ej. 300</source>
+        <target>Ex. 300</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.age">
+      <segment state="translated">
+        <source>Edad</source>
+        <target>Age</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.children">
+      <segment state="translated">
+        <source>Hijos (&lt; 25)</source>
+        <target>Children (&lt; 25)</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.region">
+      <segment state="translated">
+        <source>Comunidad Autónoma</source>
+        <target>Autonomous Community</target>
+      </segment>
+    </unit>
+    <unit id="input.section.charity">
+      <segment state="translated">
+        <source>Donaciones ONG</source>
+        <target>NGO Donations</target>
+      </segment>
+    </unit>
+    <unit id="input.section.economic">
+      <segment state="translated">
+        <source>Datos Económicos</source>
+        <target>Economic Data</target>
+      </segment>
+    </unit>
+    <unit id="input.section.health">
+      <segment state="translated">
+        <source>Seguro Médico</source>
+        <target>Health Insurance</target>
+      </segment>
+    </unit>
+    <unit id="input.section.pension">
+      <segment state="translated">
+        <source>Planes de Pensiones</source>
+        <target>Pension Plans</target>
+      </segment>
+    </unit>
+    <unit id="input.section.profile">
+      <segment state="translated">
+        <source>Perfil Fiscal</source>
+        <target>Tax Profile</target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.applied">
+      <segment state="translated">
+        <source>Retención aplicada: </source>
+        <target>Withholding applied: </target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.equivalent">
+      <segment state="translated">
+        <source>Equivale al </source>
+        <target>Equivalent to </target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.help.custom">
+      <segment state="translated">
+        <source>Introduce el total anual retenido en tus facturas.</source>
+        <target>Enter the total annual amount withheld on your invoices.</target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.ofBase">
+      <segment state="translated">
+        <source> del total facturado.</source>
+        <target> of the total invoiced.</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.cancel">
+      <segment state="translated">
+        <source>Cancelar</source>
+        <target>Cancel</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.confirm">
+      <segment state="translated">
+        <source>Recargar</source>
+        <target>Reload</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.message">
+      <segment state="translated">
+        <source>Hay una nueva versión de la aplicación disponible. ¿Quieres recargar la página para actualizar?</source>
+        <target>A new version of the application is available. Do you want to reload the page to update?</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.title">
+      <segment state="translated">
+        <source>Actualización disponible</source>
+        <target>Update available</target>
+      </segment>
+    </unit>
+    <unit id="region.andalucia">
+      <segment state="translated">
+        <source>Andalucía</source>
+        <target>Andalusia</target>
+      </segment>
+    </unit>
+    <unit id="region.canarias">
+      <segment state="translated">
+        <source>Canarias</source>
+        <target>Canary Islands</target>
+      </segment>
+    </unit>
+    <unit id="region.cataluna">
+      <segment state="translated">
+        <source>Cataluña</source>
+        <target>Catalonia</target>
+      </segment>
+    </unit>
+    <unit id="region.common">
+      <segment state="translated">
+        <source>Estatal / Otras Comunidades</source>
+        <target>State / Other Communities</target>
+      </segment>
+    </unit>
+    <unit id="region.galicia">
+      <segment state="translated">
+        <source>Galicia</source>
+        <target>Galicia</target>
+      </segment>
+    </unit>
+    <unit id="region.madrid">
+      <segment state="translated">
+        <source>Comunidad de Madrid</source>
+        <target>Community of Madrid</target>
+      </segment>
+    </unit>
+    <unit id="region.murcia">
+      <segment state="translated">
+        <source>Región de Murcia</source>
+        <target>Region of Murcia</target>
+      </segment>
+    </unit>
+    <unit id="region.valencia">
+      <segment state="translated">
+        <source>Comunidad Valenciana</source>
+        <target>Valencian Community</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.autonomousQuota">
+      <segment state="translated">
+        <source>Cuota de Autónomos</source>
+        <target>Self-Employed Quota</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.deductibleExpenses">
+      <segment state="translated">
+        <source>Gastos Deducibles</source>
+        <target>Deductible Expenses</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.diffJustification">
+      <segment state="translated">
+        <source>Gastos de Difícil Justificación (5%)</source>
+        <target>Difficult Justification Expenses (5%)</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.grossRevenue">
+      <segment state="translated">
+        <source>Facturación Bruta</source>
+        <target>Gross Billing</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.lowIncome">
+      <segment state="translated">
+        <source>Reducción de Contribuyentes Bajos</source>
+        <target>Low Taxpayer Reduction</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.taxableBase">
+      <segment state="translated">
+        <source>Base Liquidable</source>
+        <target>Taxable Base</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.title">
+      <segment state="translated">
+        <source>Desglose de Base Liquidable</source>
+        <target>Taxable Base Breakdown</target>
+      </segment>
+    </unit>
+    <unit id="results.consolidated.subtitle">
+      <segment state="translated">
+        <source>Suma de tipos Estatal + Autonómico para cada tramo.</source>
+        <target>Sum of State + Regional rates for each bracket.</target>
+      </segment>
+    </unit>
+    <unit id="results.consolidated.title">
+      <segment state="translated">
+        <source>Tramos IRPF Consolidados</source>
+        <target>Consolidated IRPF Brackets</target>
+      </segment>
+    </unit>
+    <unit id="results.effectiveRate.label">
+      <segment state="translated">
+        <source>Tipo Medio: </source>
+        <target>Average Rate: </target>
+      </segment>
+    </unit>
+    <unit id="results.finalResult">
+      <segment state="translated">
+        <source> Resultado Final </source>
+        <target> Final Result </target>
+      </segment>
+    </unit>
+    <unit id="results.marginal.text">
+      <segment state="translated">
+        <source>El Tipo Marginal (máximo que pagas) es del</source>
+        <target>The Marginal Rate (maximum you pay) is</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.health">
+      <segment state="translated">
+        <source>Reducción Seguro Médico</source>
+        <target>Health Insurance Reduction</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.ngo">
+      <segment state="translated">
+        <source>Deducción Donaciones</source>
+        <target>Donations Deduction</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.pension">
+      <segment state="translated">
+        <source>Reducción Plan Pensiones</source>
+        <target>Pension Plan Reduction</target>
+      </segment>
+    </unit>
+    <unit id="results.regional.subtitle">
+      <segment state="translated">
+        <source>Escala de la comunidad seleccionada.</source>
+        <target>Scale of the selected community.</target>
+      </segment>
+    </unit>
+    <unit id="results.regional.title">
+      <segment state="translated">
+        <source>Tramo Autonómico</source>
+        <target>Regional Bracket</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.annualQuota">
+      <segment state="translated">
+        <source>Cuota Anual</source>
+        <target>Annual Quota</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.brackets.subtitle">
+      <segment state="translated">
+        <source>Cuotas según rendimientos netos mensuales.</source>
+        <target>Quotas based on monthly net income.</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.brackets.title">
+      <segment state="translated">
+        <source>Tramos de Cotización RETA 2025</source>
+        <target>RETA 2025 Contribution Brackets</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.overpaying.detail">
+      <segment state="translated">
+        <source> Estás cotizando por encima del mínimo obligatorio. Esto es voluntario y mejora tus prestaciones futuras. </source>
+        <target> You are contributing above the minimum mandatory. This is voluntary and improves your future benefits. </target>
+      </segment>
+    </unit>
+    <unit id="results.ss.retaRate">
+      <segment state="translated">
+        <source>Tipo Cotización</source>
+        <target>Contribution Rate</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.correct">
+      <segment state="translated">
+        <source>CUOTA CORRECTA</source>
+        <target>CORRECT QUOTA</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.overpaying">
+      <segment state="translated">
+        <source>APORTACIÓN EXTRA</source>
+        <target>EXTRA CONTRIBUTION</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.underpaying">
+      <segment state="translated">
+        <source>REGULARIZACIÓN PENDIENTE</source>
+        <target>PENDING REGULARIZATION</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.bracket">
+      <segment state="translated">
+        <source>Tramo Rendimientos</source>
+        <target>Income Bracket</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.contributionBase">
+      <segment state="translated">
+        <source>Base Cotización</source>
+        <target>Contribution Base</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.monthlyQuota">
+      <segment state="translated">
+        <source>Cuota Mensual</source>
+        <target>Monthly Quota</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.theoreticalQuota">
+      <segment state="translated">
+        <source>Cuota Teórica</source>
+        <target>Theoretical Quota</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.title">
+      <segment state="translated">
+        <source> Cuota Seguridad Social </source>
+        <target> Social Security Quota </target>
+      </segment>
+    </unit>
+    <unit id="results.ss.underpaying.detail">
+      <segment state="translated">
+        <source> Estás cotizando por debajo de tus ingresos reales. Esto podría generar una regularización posterior de <ph id="0" equiv="INTERPOLATION" disp="{{ Math.abs(res.autonomousQuotaDiff) | appCurrency }}"/> anuales. </source>
+        <target> You are contributing below your real income. This could generate a subsequent regularization of <ph id="0" equiv="INTERPOLATION" disp="{{ Math.abs(res.autonomousQuotaDiff) | appCurrency }}"/> annually. </target>
+      </segment>
+    </unit>
+    <unit id="results.state.subtitle">
+      <segment state="translated">
+        <source>Escala válida para todo el territorio.</source>
+        <target>Scale valid for the entire territory.</target>
+      </segment>
+    </unit>
+    <unit id="results.state.title">
+      <segment state="translated">
+        <source>Tramo Estatal</source>
+        <target>State Bracket</target>
+      </segment>
+    </unit>
+    <unit id="results.status.pay">
+      <segment state="translated">
+        <source>A PAGAR</source>
+        <target>TO PAY</target>
+      </segment>
+    </unit>
+    <unit id="results.status.refund">
+      <segment state="translated">
+        <source>A DEVOLVER</source>
+        <target>TO REFUND</target>
+      </segment>
+    </unit>
+    <unit id="results.tab.global">
+      <segment state="translated">
+        <source> Tabla Global Agregada </source>
+        <target> Aggregated Global Table </target>
+      </segment>
+    </unit>
+    <unit id="results.tab.split">
+      <segment state="translated">
+        <source> Desglose Estatal/Autonómico </source>
+        <target> State/Regional Breakdown </target>
+      </segment>
+    </unit>
+    <unit id="results.table.amount">
+      <segment state="translated">
+        <source>Importe</source>
+        <target>Amount</target>
+      </segment>
+    </unit>
+    <unit id="results.table.base">
+      <segment state="translated">
+        <source>Base</source>
+        <target>Base</target>
+      </segment>
+    </unit>
+    <unit id="results.table.baseInBracket">
+      <segment state="translated">
+        <source>Base en Tramo</source>
+        <target>Base in Bracket</target>
+      </segment>
+    </unit>
+    <unit id="results.table.bracket">
+      <segment state="translated">
+        <source>Tramo</source>
+        <target>Bracket</target>
+      </segment>
+    </unit>
+    <unit id="results.table.bracketRent">
+      <segment state="translated">
+        <source>Tramo de Renta</source>
+        <target>Income Bracket</target>
+      </segment>
+    </unit>
+    <unit id="results.table.concept">
+      <segment state="translated">
+        <source>Concepto</source>
+        <target>Concept</target>
+      </segment>
+    </unit>
+    <unit id="results.table.quota">
+      <segment state="translated">
+        <source>Cuota</source>
+        <target>Quota</target>
+      </segment>
+    </unit>
+    <unit id="results.table.type">
+      <segment state="translated">
+        <source>Tipo</source>
+        <target>Rate</target>
+      </segment>
+    </unit>
+    <unit id="results.table.typeGlobal">
+      <segment state="translated">
+        <source>Tipo Global</source>
+        <target>Global Rate</target>
+      </segment>
+    </unit>
+    <unit id="results.totalQuota">
+      <segment state="translated">
+        <source>Cuota Total</source>
+        <target>Total Quota</target>
+      </segment>
+    </unit>
+    <unit id="results.withholding.custom">
+      <segment state="translated">
+        <source>Personalizada</source>
+        <target>Custom</target>
+      </segment>
+    </unit>
+    <unit id="results.withholding.label">
+      <segment state="translated">
+        <source>Retenciones</source>
+        <target>Withholdings</target>
+      </segment>
+    </unit>
+    <unit id="save.button">
+      <segment state="translated">
+        <source>Guardar</source>
+        <target>Save</target>
+      </segment>
+    </unit>
+    <unit id="save.placeholder.name">
+      <segment state="translated">
+        <source>Nombre del escenario...</source>
+        <target>Scenario name...</target>
+      </segment>
+    </unit>
+    <unit id="save.title">
+      <segment state="translated">
+        <source>Guardar Escenario</source>
+        <target>Save Scenario</target>
+      </segment>
+    </unit>
+    <unit id="stepper.data">
+      <segment state="translated">
+        <source>Datos</source>
+        <target>Data</target>
+      </segment>
+    </unit>
+    <unit id="stepper.info">
+      <segment state="translated">
+        <source>Info</source>
+        <target>Info</target>
+      </segment>
+    </unit>
+    <unit id="stepper.results">
+      <segment state="translated">
+        <source>Resultados</source>
+        <target>Results</target>
+      </segment>
+    </unit>
+    <unit id="toast.close">
+      <segment state="translated">
+        <source>Cerrar notificación</source>
+        <target>Close notification</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

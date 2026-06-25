@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "reta": {
+        "type": "object",
+        "properties": {
+          "rate": { "type": "number" },
+          "minQuota": { "type": "number" },
+          "table": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "limit": { "type": ["number", "null"] },
+                "base": { "type": "number" }
+              },
+              "required": ["limit", "base"]
+            }
+          }
+        },
+        "required": ["rate", "minQuota", "table"]
+      },
+      "deductions": {
+        "type": "object",
+        "properties": {
+          "healthInsuranceLimitPerPerson": { "type": "number" },
+          "diffJustification": {
+            "type": "object",
+            "properties": {
+              "rate": { "type": "number" },
+              "max": { "type": "number" }
+            },
+            "required": ["rate", "max"]
+          },
+          "pension": {
+            "type": "object",
+            "properties": {
+              "individualMax": { "type": "number" },
+              "autonomousMax": { "type": "number" },
+              "totalRateLimit": { "type": "number" }
+            },
+            "required": ["individualMax", "autonomousMax", "totalRateLimit"]
+          },
+          "lowIncome": {
+            "type": "object",
+            "properties": {
+              "limit1": { "type": "number" },
+              "limit2": { "type": "number" },
+              "maxReduction": { "type": "number" },
+              "factor": { "type": "number" }
+            },
+            "required": ["limit1", "limit2", "maxReduction", "factor"]
+          },
+          "ngo": {
+            "type": "object",
+            "properties": {
+              "limit1": { "type": "number" },
+              "rate1": { "type": "number" },
+              "rate2": { "type": "number" },
+              "baseLimitRate": { "type": "number" }
+            },
+            "required": ["limit1", "rate1", "rate2", "baseLimitRate"]
+          }
+        },
+        "required": ["healthInsuranceLimitPerPerson", "diffJustification", "pension", "lowIncome", "ngo"]
+      },
+      "minPersonal": {
+        "type": "object",
+        "properties": {
+          "base": { "type": "number" },
+          "over65": { "type": "number" },
+          "over75": { "type": "number" },
+          "children": {
+            "type": "array",
+            "items": { "type": "number" }
+          }
+        },
+        "required": ["base", "over65", "over75", "children"]
+      },
+      "irpf": {
+        "type": "object",
+        "properties": {
+          "withholdingRate": { "type": "number" },
+          "stateScale": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "l": { "type": ["number", "null"] },
+                "r": { "type": "number" }
+              },
+              "required": ["l", "r"]
+            }
+          },
+          "regionalScales": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "l": { "type": ["number", "null"] },
+                  "r": { "type": "number" }
+                },
+                "required": ["l", "r"]
+              }
+            }
+          }
+        },
+        "required": ["withholdingRate", "stateScale", "regionalScales"]
+      }
+    },
+    "required": ["reta", "deductions", "minPersonal", "irpf"]
+  }

@@ -1,0 +1,1060 @@
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="es" trgLang="ca">
+  <file id="ngi18n" original="ng.template">
+    <unit id="disclaimer.close">
+      <segment state="translated">
+        <source>Cerrar aviso</source>
+        <target>Tancar avís</target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.open">
+      <segment state="translated">
+        <source>Mostrar aviso importante</source>
+        <target>Mostrar avís important</target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.text">
+      <segment state="translated">
+        <source> Este simulador es un <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experimento de Lostium</pc> hecho con <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">vibe coding</pc> y no ofrece ningún tipo de garantía. En ningún caso hay fiabilidad de que los datos mostrados sean correctos para tu caso particular. Además, este simulador <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no contempla los regímenes forales de País Vasco y Navarra</pc>, ya que disponen de haciendas propias y normativa fiscal específica. </source>
+        <target> Aquest simulador és un <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experiment de Lostium</pc> fet amb <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">vibe coding</pc> i no ofereix cap tipus de garantia. En cap cas hi ha fiabilitat que les dades mostrades siguin correctes per al teu cas particular. A més, aquest simulador <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no contempla els règims forals del País Basc i Navarra</pc>, ja que disposen d&apos;hisendes pròpies i normativa fiscal específica. </target>
+      </segment>
+    </unit>
+    <unit id="disclaimer.title">
+      <segment state="translated">
+        <source>Aviso Importante</source>
+        <target>Avís Important</target>
+      </segment>
+    </unit>
+    <unit id="header.subtitle">
+      <segment state="translated">
+        <source>Para Autónomos en España</source>
+        <target>Per a Autònoms a Espanya</target>
+      </segment>
+    </unit>
+    <unit id="header.title">
+      <segment state="translated">
+        <source>Simulador Renta </source>
+        <target>Simulador Renda </target>
+      </segment>
+    </unit>
+    <unit id="history.btn.clearAll.title">
+      <segment state="translated">
+        <source>Eliminar todo</source>
+        <target>Eliminar-ho tot</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.delete.title">
+      <segment state="translated">
+        <source>Eliminar</source>
+        <target>Eliminar</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.export.title">
+      <segment state="translated">
+        <source>Exportar</source>
+        <target>Exportar</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.exportOne.title">
+      <segment state="translated">
+        <source>Exportar esta simulación</source>
+        <target>Exportar aquesta simulació</target>
+      </segment>
+    </unit>
+    <unit id="history.btn.import.title">
+      <segment state="translated">
+        <source>Importar</source>
+        <target>Importar</target>
+      </segment>
+    </unit>
+    <unit id="history.import.subtitle">
+      <segment state="translated">
+        <source> Arrastra tus archivos JSON aquí o haz clic para buscarlos </source>
+        <target> Arrossega els teus fitxers JSON aquí o fes clic per cercar-los </target>
+      </segment>
+    </unit>
+    <unit id="history.import.title">
+      <segment state="translated">
+        <source>Importar Simulaciones</source>
+        <target>Importar Simulacions</target>
+      </segment>
+    </unit>
+    <unit id="history.title">
+      <segment state="translated">
+        <source>Historial</source>
+        <target>Historial</target>
+      </segment>
+    </unit>
+    <unit id="info.cta.button">
+      <segment state="translated">
+        <source>Comenzar Simulación</source>
+        <target>Començar Simulació</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.p1">
+      <segment state="translated">
+        <source>Antes de empezar, aclaremos el error más común: el IVA <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no pinta nada aquí</pc>. No es un ingreso, es un impuesto al consumo que paga tu cliente.</source>
+        <target>Abans de començar, aclarim l&apos;error més comú: l&apos;IVA <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">no pinta res aquí</pc>. No és un ingrés, és un impost al consum que paga el teu client.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.p2">
+      <segment state="translated">
+        <source>Tú actúas simplemente como un &quot;recaudador&quot; temporal: lo cobras y luego se lo entregas intacto a Hacienda. No entra en el cálculo de tus beneficios ni del IRPF.</source>
+        <target>Tu actues simplement com un &quot;recaptador&quot; temporal: el cobres i després el lliures intacte a Hisenda. No entra en el càlcul dels teus beneficis ni de l&apos;IRPF.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.content.rule">
+      <segment state="translated">
+        <source>Regla de oro: Para usar este simulador (y para tu vida), mira siempre la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Imponible</pc> de tus facturas, nunca el total con IVA.</source>
+        <target>Regla d&apos;or: Per utilitzar aquest simulador (i per a la teva vida), mira sempre la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Imposable</pc> de les teves factures, mai el total amb IVA.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q1.title">
+      <segment state="translated">
+        <source>6. El IVA: un dinero que nunca fue tuyo</source>
+        <target>6. L&apos;IVA: uns diners que mai van ser teus</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.intro">
+      <segment state="translated">
+        <source>No pagas impuestos por todo lo que facturas, sino solo por lo que realmente ganas (tu beneficio real). Para calcular tu capacidad de aportación:</source>
+        <target>No pagues impostos per tot el que factures, sinó només pel que realment guanyes (el teu benefici real). Per calcular la teva capacitat d&apos;aportació:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.diff">
+      <segment state="translated">
+        <source>Se aplica un descuento automático del 5% para cubrir esos pequeños gastos difíciles de justificar.</source>
+        <target>S&apos;aplica un descompte automàtic del 5% per cobrir aquestes petites despeses difícils de justificar.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.expenses">
+      <segment state="translated">
+        <source>Restamos los gastos necesarios para tu actividad: cuota de autónomos, servicios, seguro médico, etc.</source>
+        <target>Restem les despeses necessàries per a la teva activitat: quota d&apos;autònoms, serveis, assegurança mèdica, etc.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.list.reduction">
+      <segment state="translated">
+        <source>Si tus beneficios son ajustados, cuentas con una reducción extra de apoyo.</source>
+        <target>Si els teus beneficis són ajustats, comptes amb una reducció extra de suport.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.content.summary">
+      <segment state="translated">
+        <source>El resultado es la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Liquidable</pc>, que representa tu capacidad económica real y sobre la que se calcula tu contribución.</source>
+        <target>El resultat és la <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Base Liquidable</pc>, que representa la teva capacitat econòmica real i sobre la qual es calcula la teva contribució.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q2.title">
+      <segment state="translated">
+        <source>1. ¿Sobre qué beneficios aportas? (La base)</source>
+        <target>1. Sobre quins beneficis aportes? (La base)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.intro">
+      <segment state="translated">
+        <source>El IRPF funciona por escalones. No pagas lo mismo por el primer euro que ganas que por el último:</source>
+        <target>L&apos;IRPF funciona per trams. No pagues el mateix pel primer euro que guanyes que per l&apos;últim:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.list.high">
+      <segment state="translated">
+        <source>Si ganas mucho, los últimos euros pagan bastante más (casi la mitad).</source>
+        <target>Si guanyes molt, els últims euros paguen bastant més (gairebé la meitat).</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.list.low">
+      <segment state="translated">
+        <source>Los primeros euros pagan poquito.</source>
+        <target>Els primers euros paguen poquet.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.content.summary">
+      <segment state="translated">
+        <source>Además, el impuesto tiene dos dueños: la mitad va para el <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Estado</pc> y la otra mitad para tu <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Comunidad Autónoma</pc>. Por eso, dependiendo de dónde vivas, la factura final cambia.</source>
+        <target>A més, l&apos;impost té dos amos: la meitat va per a l&apos;<pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Estat</pc> i l&apos;altra meitat per a la teva <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Comunitat Autònoma</pc>. Per això, depenent d&apos;on visquis, la factura final canvia.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q3.title">
+      <segment state="translated">
+        <source>3. La escalera de los impuestos (Los tramos)</source>
+        <target>3. L&apos;escala dels impostos (Els trams)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.content.p1">
+      <segment state="translated">
+        <source>El sistema reconoce que una parte de tus ingresos es esencial para cubrir tus necesidades básicas y las de tu familia, por lo que esa cantidad queda exenta de tributación.</source>
+        <target>El sistema reconeix que una part dels teus ingressos és essencial per cobrir les teves necessitats bàsiques i les de la teva família, per la qual cosa aquesta quantitat queda exempta de tributació.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.content.p2">
+      <segment state="translated">
+        <source>Partimos de unos <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">5.550€</pc> iniciales, cifra que aumenta si tienes hijos a cargo o según tu edad. En la práctica, se calcula el impuesto que correspondería a esa cantidad y se resta de tu cuota, garantizando que ese mínimo vital no tribute.</source>
+        <target>Partim d&apos;uns <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">5.550€</pc> inicials, xifra que augmenta si tens fills a càrrec o segons la teva edat. A la pràctica, es calcula l&apos;impost que correspondria a aquesta quantitat i es resta de la teva quota, garantint que aquest mínim vital no tributi.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q4.title">
+      <segment state="translated">
+        <source>4. Tu mínimo vital está protegido (Mínimos)</source>
+        <target>4. El teu mínim vital està protegit (Mínims)</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.intro">
+      <segment state="translated">
+        <source>Llega la hora de la verdad. Calculamos el impuesto total y miramos qué has pagado ya:</source>
+        <target>Arriba l&apos;hora de la veritat. Calculem l&apos;impost total i mirem què has pagat ja:</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.list.deductions">
+      <segment state="translated">
+        <source>Restamos deducciones si eres solidario (donaciones a ONGs).</source>
+        <target>Restem deduccions si ets solidari (donacions a ONGs).</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.list.retentions">
+      <segment state="translated">
+        <source>Restamos las <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Retenciones</pc>. Lo habitual es haber adelantado un 15% en tus facturas, aunque si eres &quot;nuevo autónomo&quot; (primeros 3 años) será solo un 7%. También puedes indicar la cantidad exacta que has aportado si llevas tu propia contabilidad.</source>
+        <target>Restem les <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Retencions</pc>. L&apos;habitual és haver avançat un 15% a les teves factures, tot i que si ets &quot;nou autònom&quot; (primers 3 anys) serà només un 7%. També pots indicar la quantitat exacta que has aportat si portes la teva pròpia comptabilitat.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.content.result">
+      <segment state="translated">
+        <source>Si has adelantado más dinero del que te tocaba, Hacienda te <pc id="0" equivStart="START_TAG_SPAN" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-emerald-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">devuelve</pc> la diferencia. Si te has quedado corto... toca <pc id="1" equivStart="START_TAG_SPAN_1" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-rose-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">pagar</pc>.</source>
+        <target>Si has avançat més diners del que et tocava, Hisenda et <pc id="0" equivStart="START_TAG_SPAN" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-emerald-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">torna</pc> la diferència. Si t&apos;has quedat curt... toca <pc id="1" equivStart="START_TAG_SPAN_1" equivEnd="CLOSE_TAG_SPAN" type="other" dispStart="&lt;span class=&quot;text-rose-400 font-bold&quot;&gt;" dispEnd="&lt;/span&gt;">pagar</pc>.</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q5.title">
+      <segment state="translated">
+        <source>5. La cuenta final: ¿Pagar o devolver?</source>
+        <target>5. El compte final: pagar o tornar?</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q_reta.content">
+      <segment state="translated">
+        <source> El simulador incorpora automáticamente el cálculo de la cuota según el sistema de ingresos reales que aplicó durante el año pasado (2025). Al introducir tu previsión de ingresos, la herramienta estima la cuota mínima del tramo que te correspondió y la resta como un gasto deducible para mayor precisión en el cálculo final. </source>
+        <target> El simulador incorpora automàticament el càlcul de la quota segons el sistema d&apos;ingressos reals que va aplicar durant l&apos;any passat (2025). En introduir la teva previsió d&apos;ingressos, l&apos;eina estima la quota mínima del tram que et va correspondre i la resta com una despesa deduïble per a major precisió en el càlcul final. </target>
+      </segment>
+    </unit>
+    <unit id="info.faq.q_reta.title">
+      <segment state="translated">
+        <source>2. La Cuota de Autónomos (RETA) de 2025</source>
+        <target>2. La Quota d&apos;Autònoms (RETA) de 2025</target>
+      </segment>
+    </unit>
+    <unit id="info.faq.title">
+      <segment state="translated">
+        <source>El IRPF explicado para humanos</source>
+        <target>L&apos;IRPF explicat per a humans</target>
+      </segment>
+    </unit>
+    <unit id="info.hero.description.purpose">
+      <segment state="translated">
+        <source> Este <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">simulador simplificado</pc> es un <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experimento de Lostium</pc> que realiza una estimación de tu IRPF basándose en tus <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">ingresos, retenciones y deducciones principales</pc>. También calcula automáticamente tu <pc id="3" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">cuota de autónomos de 2025</pc> (el año pasado) bajo el sistema de cotización por ingresos reales. </source>
+        <target> Aquest <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">simulador simplificat</pc> és un <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">experiment de Lostium</pc> que realitza una estimació del teu IRPF basant-se en els teus <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">ingressos, retencions i deduccions principals</pc>. També calcula automàticament la teva <pc id="3" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">quota d&apos;autònoms de 2025</pc> (l&apos;any passat) sota el sistema de cotització per ingressos reals. </target>
+      </segment>
+    </unit>
+    <unit id="info.hero.description.origin">
+      <segment state="translated">
+        <source> Surge de la necesidad de prever el resultado de la Declaración de la Renta de forma ágil, sin depender de complejas hojas de cálculo. Aunque fue concebido para <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">autónomos societarios</pc> en estimación directa simplificada, su lógica es útil para cualquier trabajador por cuenta propia. </source>
+        <target> Sorgeix de la necessitat de preveure el resultat de la Declaració de la Renda de forma àgil, sense dependre de complexos fulls de càlcul. Tot i que va ser concebut per a <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">autònoms societaris</pc> en estimació directa simplificada, la seva lògica és útil per a qualsevol treballador per compte propi. </target>
+      </segment>
+    </unit>
+    <unit id="info.hero.mode">
+      <segment state="translated">
+        <source>IRPF y cuota de autónomos de 2025</source>
+        <target>IRPF Autònom 2025</target>
+      </segment>
+    </unit>
+    <unit id="info.hero.title">
+      <segment state="translated">
+        <source>Calcula tu </source>
+        <target>Calcula el teu </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.context.content">
+      <segment state="translated">
+        <source> Los modelos de IA dependen de sus datos de entrenamiento, que a menudo contienen información desactualizada. Esto puede llevar al uso de pautas obsoletas o &quot;deprecadas&quot;. Para evitarlo, es fundamental <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">inyectar el contexto de la documentación técnica más reciente</pc>, &quot;re-educando&quot; al modelo en tiempo real para que ignore viejos hábitos y aplique las últimas novedades tecnológicas. </source>
+        <target> Els models d&apos;IA depenen de les seves dades d&apos;entrenament, que sovint contenen informació desactualitzada. Això pot portar a l&apos;ús de pautes obsoletes o &quot;deprecades&quot;. Per evitar-ho, és fonamental <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">injectar el context de la documentació tècnica més recent</pc>, &quot;re-educant&quot; el model en temps real perquè ignori vells hàbits i apliqui les últimes novetats tecnològiques. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.context.title">
+      <segment state="translated">
+        <source>El reto del conocimiento: contexto vs. entrenamiento</source>
+        <target>El repte del coneixement: context vs. entrenament</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.methodology.content">
+      <segment state="translated">
+        <source> El éxito depende de dos pilares: una <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">definición clara de especificaciones</pc> y una rigurosa <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">supervisión humana</pc>. Nuestro rol se centra en validar cada entrega de la IA, corrigiendo desviaciones y asegurando que el producto final cumpla con los estándares de calidad más exigentes. </source>
+        <target> L&apos;èxit depèn de dos pilars: una <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">definició clara d&apos;especificacions</pc> i una rigorosa <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">supervisió humana</pc>. El nostre rol se centra a validar cada lliurament de la IA, corregint desviacions i assegurant que el producte final compleixi amb els estàndards de qualitat més exigents. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.methodology.title">
+      <segment state="translated">
+        <source>Metodología: definición y supervisión</source>
+        <target>Metodologia: Definició i supervisió</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.process.content">
+      <segment state="translated">
+        <source> El desarrollo evolucionó desde un prototipo <pc id="0" equivStart="START_EMPHASISED_TEXT" equivEnd="CLOSE_EMPHASISED_TEXT" type="fmt" dispStart="&lt;em&gt;" dispEnd="&lt;/em&gt;">One Shot</pc> en HTML/JS hasta una arquitectura profesional en <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>. La conversión no fue automática; requirió un trabajo de <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">refinamiento y supervisión</pc> humana para guiar a la IA, asegurando que la adaptación cumpliera estrictamente con las mejores prácticas y patrones del framework. </source>
+        <target> El desenvolupament va evolucionar des d&apos;un prototip <pc id="0" equivStart="START_EMPHASISED_TEXT" equivEnd="CLOSE_EMPHASISED_TEXT" type="fmt" dispStart="&lt;em&gt;" dispEnd="&lt;/em&gt;">One Shot</pc> en HTML/JS fins a una arquitectura professional en <pc id="1" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>. La conversió no va ser automàtica; va requerir un treball de <pc id="2" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">refinament i supervisió</pc> humana per guiar la IA, assegurant que l&apos;adaptació complís estrictament amb les millors pràctiques i patrons del framework. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.process.title">
+      <segment state="translated">
+        <source>One Shot: de prototipo a producción</source>
+        <target>One Shot: De prototip a producció</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.security.content">
+      <segment state="translated">
+        <source> Esta aplicación funciona <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">100% en local</pc> dentro de tu navegador. Ningún dato fiscal, nombre o cifra se envía a servidores externos. Los cálculos se realizan en tu dispositivo y la información solo se guarda si decides usar la función de &quot;Historial&quot; (usando el almacenamiento local de tu navegador). </source>
+        <target> Aquesta aplicació funciona <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">100% en local</pc> dins del teu navegador. Cap dada fiscal, nom o xifra s&apos;envia a servidors externs. Els càlculs es realitzen al teu dispositiu i la informació només es desa si decideixes utilitzar la funció d&apos;&quot;Historial&quot; (fent servir l&apos;emmagatzematge local del teu navegador). </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.security.title">
+      <segment state="translated">
+        <source>Privacidad: tus datos no salen de aquí</source>
+        <target>Privadesa: Les teves dades no surten d&apos;aquí</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.intro">
+      <segment state="translated">
+        <source> Arquitectura moderna diseñada para rendimiento y mantenibilidad: </source>
+        <target> Arquitectura moderna dissenyada per a rendiment i mantenibilitat: </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.core">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>: Standalone Components, Signals y Control Flow (@if/@for).</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Angular 21</pc>: Standalone Components, Signals i Control Flow (@if/@for).</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.css">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Tailwind CSS 4</pc>: Estilado atómico con el nuevo motor Oxide de alto rendimiento.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Tailwind CSS 4</pc>: Estilat atòmic amb el nou motor Oxide d&apos;alt rendiment.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.pwa">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Client-Side</pc>: Ejecución pura en JavaScript/TypeScript sin backend.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Client-Side</pc>: Execució pura en JavaScript/TypeScript sense backend.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.list.state">
+      <segment state="translated">
+        <source><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Signals</pc>: Gestión de estado reactiva y granular sin Zone.js.</source>
+        <target><pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Signals</pc>: Gestió d&apos;estat reactiva i granular sense Zone.js.</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.stack.title">
+      <segment state="translated">
+        <source>Stack tecnológico: Angular 21 y más</source>
+        <target>Stack Tecnològic: Angular 21 i més</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.title">
+      <segment state="translated">
+        <source>Consideraciones técnicas</source>
+        <target>Consideracions Tècniques</target>
+      </segment>
+    </unit>
+    <unit id="info.tech.vibecoding.content">
+      <segment state="translated">
+        <source> Este proyecto es un caso práctico de <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong class=&quot;text-indigo-400&quot;&gt;" dispEnd="&lt;/strong&gt;">Vibe Coding</pc>: el desarrollo de aplicaciones se potencia y acelera con un modelo de inteligencia artificial. Elimina las partes más tediosas de la implementación y nos permite centrarnos en lo que importa, buscar soluciones que resuelvan problemas. En este caso hemos utilizado herramientas como <pc id="1" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Google Antigravity</pc> y <pc id="2" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Gemini CLI</pc> utilizando agentes en paralelo que han implementado todos los detalles del proyecto. </source>
+        <target> Aquest projecte és un cas pràctic de <pc id="0" equivStart="START_TAG_STRONG" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong class=&quot;text-indigo-400&quot;&gt;" dispEnd="&lt;/strong&gt;">Vibe Coding</pc>: el desenvolupament d&apos;aplicacions es potencia i accelera amb un model d&apos;intel·ligència artificial. Elimina les parts més tedioses de la implementació i ens permet centrar-nos en el que importa, buscar solucions que resolguin problemes. En aquest cas hem utilitzat eines com <pc id="1" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Google Antigravity</pc> i <pc id="2" equivStart="START_TAG_STRONG_1" equivEnd="CLOSE_TAG_STRONG" type="other" dispStart="&lt;strong&gt;" dispEnd="&lt;/strong&gt;">Gemini CLI</pc> utilitzant agents en paral·lel que han implementat tots els detalls del projecte. </target>
+      </segment>
+    </unit>
+    <unit id="info.tech.vibecoding.title">
+      <segment state="translated">
+        <source>Vibe Coding: un nuevo paradigma</source>
+        <target>Vibe Coding: Un nou paradigma</target>
+      </segment>
+    </unit>
+    <unit id="input.age.over65">
+      <segment state="translated">
+        <source>Mayor 65</source>
+        <target>Major 65</target>
+      </segment>
+    </unit>
+    <unit id="input.age.over75">
+      <segment state="translated">
+        <source>Mayor 75</source>
+        <target>Major 75</target>
+      </segment>
+    </unit>
+    <unit id="input.age.under65">
+      <segment state="translated">
+        <source>Menor 65</source>
+        <target>Menor 65</target>
+      </segment>
+    </unit>
+    <unit id="input.btn.custom">
+      <segment state="translated">
+        <source>Personalizado</source>
+        <target>Personalitzat</target>
+      </segment>
+    </unit>
+    <unit id="input.button.viewResults">
+      <segment state="translated">
+        <source>Ver Resultados</source>
+        <target>Veure Resultats</target>
+      </segment>
+    </unit>
+    <unit id="input.charity.amount">
+      <segment state="translated">
+        <source>Importe Anual</source>
+        <target>Import Anual</target>
+      </segment>
+    </unit>
+    <unit id="input.check.expensesDiff">
+      <segment state="translated">
+        <source>Aplicar 5% Gastos Difícil Justif.</source>
+        <target>Aplicar 5% Despeses Difícil Justif.</target>
+      </segment>
+    </unit>
+    <unit id="input.check.societario">
+      <segment state="translated">
+        <source>Autónomo Societario</source>
+        <target>Autònom Societari</target>
+      </segment>
+    </unit>
+    <unit id="input.details.concept">
+      <segment state="translated">
+        <source>Concepto</source>
+        <target>Concepte</target>
+      </segment>
+    </unit>
+    <unit id="input.details.freq.annual">
+      <segment state="translated">
+        <source>Anual</source>
+        <target>Anual</target>
+      </segment>
+    </unit>
+    <unit id="input.details.freq.monthly">
+      <segment state="translated">
+        <source>Mensual</source>
+        <target>Mensual</target>
+      </segment>
+    </unit>
+    <unit id="input.details.title">
+      <segment state="translated">
+        <source>Desglose de Gastos (Opcional)</source>
+        <target>Desglossament de Despeses (Opcional)</target>
+      </segment>
+    </unit>
+    <unit id="input.details.total">
+      <segment state="translated">
+        <source>Total Detallado:</source>
+        <target>Total Detallat:</target>
+      </segment>
+    </unit>
+    <unit id="input.details.yearly">
+      <segment state="translated">
+        <source>anual</source>
+        <target>anual</target>
+      </segment>
+    </unit>
+    <unit id="input.health.annualCost">
+      <segment state="translated">
+        <source>Gastos Anuales</source>
+        <target>Despeses Anuals</target>
+      </segment>
+    </unit>
+    <unit id="input.health.insuredCount">
+      <segment state="translated">
+        <source>Nº Asegurados</source>
+        <target>Nº Assegurats</target>
+      </segment>
+    </unit>
+    <unit id="input.help.charity">
+      <segment state="translated">
+        <source>Deducción: 80% de los primeros 250€ y 40% del resto.</source>
+        <target>Deducció: 80% dels primers 250€ i 40% de la resta.</target>
+      </segment>
+    </unit>
+    <unit id="input.help.health">
+      <segment state="translated">
+        <source>Deducible hasta 500€ por persona (titular, cónyuge e hijos &lt; 25 años).</source>
+        <target>Deduïble fins a 500€ per persona (titular, cònjuge i fills &lt; 25 anys).</target>
+      </segment>
+    </unit>
+    <unit id="input.help.pension">
+      <segment state="translated">
+        <source>Límites: 1.500€ (indiv.) + 4.250€ (empleo). Máx 30% Rend. Neto.</source>
+        <target>Límits: 1.500€ (indiv.) + 4.250€ (ocupació). Màx 30% Rend. Net.</target>
+      </segment>
+    </unit>
+    <unit id="input.help.quota">
+      <segment state="translated">
+        <source>Dejar vacío para auto-cálculo</source>
+        <target>Deixar buit per a càlcul automàtic</target>
+      </segment>
+    </unit>
+    <unit id="input.label.expenses">
+      <segment state="translated">
+        <source>Gastos Anuales</source>
+        <target>Despeses Anuals</target>
+      </segment>
+    </unit>
+    <unit id="input.label.grossIncome">
+      <segment state="translated">
+        <source>Total Facturado (Base)</source>
+        <target>Total Facturat (Base)</target>
+      </segment>
+    </unit>
+    <unit id="input.label.quota">
+      <segment state="translated">
+        <source>Cuota Autónomos</source>
+        <target>Quota Autònoms</target>
+      </segment>
+    </unit>
+    <unit id="input.label.withholding">
+      <segment state="translated">
+        <source>Retenciones</source>
+        <target>Retencions</target>
+      </segment>
+    </unit>
+    <unit id="input.pension.autonomous">
+      <segment state="translated">
+        <source>P. Autónomo</source>
+        <target>P. Autònom</target>
+      </segment>
+    </unit>
+    <unit id="input.pension.individual">
+      <segment state="translated">
+        <source>P. Individual</source>
+        <target>P. Individual</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.auto">
+      <segment state="translated">
+        <source>Auto</source>
+        <target>Auto</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.customWithholding">
+      <segment state="translated">
+        <source>Ej. 2000</source>
+        <target>Ex. 2000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.expenses">
+      <segment state="translated">
+        <source>Ej. 2.000</source>
+        <target>Ex. 2.000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.grossIncome">
+      <segment state="translated">
+        <source>Ej. 45.000</source>
+        <target>Ex. 45.000</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.healthInsurance">
+      <segment state="translated">
+        <source>Ej. 600</source>
+        <target>Ex. 600</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.max1500">
+      <segment state="translated">
+        <source>Máx 1.500</source>
+        <target>Màx 1.500</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.max4250">
+      <segment state="translated">
+        <source>Máx 4.250</source>
+        <target>Màx 4.250</target>
+      </segment>
+    </unit>
+    <unit id="input.placeholder.ngoDonations">
+      <segment state="translated">
+        <source>Ej. 300</source>
+        <target>Ex. 300</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.age">
+      <segment state="translated">
+        <source>Edad</source>
+        <target>Edat</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.children">
+      <segment state="translated">
+        <source>Hijos (&lt; 25)</source>
+        <target>Fills (&lt; 25)</target>
+      </segment>
+    </unit>
+    <unit id="input.profile.region">
+      <segment state="translated">
+        <source>Comunidad Autónoma</source>
+        <target>Comunitat Autònoma</target>
+      </segment>
+    </unit>
+    <unit id="input.section.charity">
+      <segment state="translated">
+        <source>Donaciones ONG</source>
+        <target>Donacions ONG</target>
+      </segment>
+    </unit>
+    <unit id="input.section.economic">
+      <segment state="translated">
+        <source>Datos Económicos</source>
+        <target>Dades Econòmiques</target>
+      </segment>
+    </unit>
+    <unit id="input.section.health">
+      <segment state="translated">
+        <source>Seguro Médico</source>
+        <target>Assegurança Mèdica</target>
+      </segment>
+    </unit>
+    <unit id="input.section.pension">
+      <segment state="translated">
+        <source>Planes de Pensiones</source>
+        <target>Plans de Pensions</target>
+      </segment>
+    </unit>
+    <unit id="input.section.profile">
+      <segment state="translated">
+        <source>Perfil Fiscal</source>
+        <target>Perfil Fiscal</target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.applied">
+      <segment state="translated">
+        <source>Retención aplicada: </source>
+        <target>Retenció aplicada: </target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.equivalent">
+      <segment state="translated">
+        <source>Equivale al </source>
+        <target>Equival al </target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.help.custom">
+      <segment state="translated">
+        <source>Introduce el total anual retenido en tus facturas.</source>
+        <target>Introdueix el total anual retingut a les teves factures.</target>
+      </segment>
+    </unit>
+    <unit id="input.withholding.ofBase">
+      <segment state="translated">
+        <source> del total facturado.</source>
+        <target> del total facturat.</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.cancel">
+      <segment state="translated">
+        <source>Cancelar</source>
+        <target>Cancel·lar</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.confirm">
+      <segment state="translated">
+        <source>Recargar</source>
+        <target>Recarregar</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.message">
+      <segment state="translated">
+        <source>Hay una nueva versión de la aplicación disponible. ¿Quieres recargar la página para actualizar?</source>
+        <target>Hi ha una nova versió de l&apos;aplicació disponible. Vols recarregar la pàgina per actualitzar?</target>
+      </segment>
+    </unit>
+    <unit id="pwa.update.title">
+      <segment state="translated">
+        <source>Actualización disponible</source>
+        <target>Actualització disponible</target>
+      </segment>
+    </unit>
+    <unit id="region.andalucia">
+      <segment state="translated">
+        <source>Andalucía</source>
+        <target>Andalusia</target>
+      </segment>
+    </unit>
+    <unit id="region.canarias">
+      <segment state="translated">
+        <source>Canarias</source>
+        <target>Canàries</target>
+      </segment>
+    </unit>
+    <unit id="region.cataluna">
+      <segment state="translated">
+        <source>Cataluña</source>
+        <target>Catalunya</target>
+      </segment>
+    </unit>
+    <unit id="region.common">
+      <segment state="translated">
+        <source>Estatal / Otras Comunidades</source>
+        <target>Estatal / Altres Comunitats</target>
+      </segment>
+    </unit>
+    <unit id="region.galicia">
+      <segment state="translated">
+        <source>Galicia</source>
+        <target>Galícia</target>
+      </segment>
+    </unit>
+    <unit id="region.madrid">
+      <segment state="translated">
+        <source>Comunidad de Madrid</source>
+        <target>Comunitat de Madrid</target>
+      </segment>
+    </unit>
+    <unit id="region.murcia">
+      <segment state="translated">
+        <source>Región de Murcia</source>
+        <target>Regió de Múrcia</target>
+      </segment>
+    </unit>
+    <unit id="region.valencia">
+      <segment state="translated">
+        <source>Comunidad Valenciana</source>
+        <target>Comunitat Valenciana</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.autonomousQuota">
+      <segment state="translated">
+        <source>Cuota de Autónomos</source>
+        <target>Quota d&apos;Autònoms</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.deductibleExpenses">
+      <segment state="translated">
+        <source>Gastos Deducibles</source>
+        <target>Despeses Deduïbles</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.diffJustification">
+      <segment state="translated">
+        <source>Gastos de Difícil Justificación (5%)</source>
+        <target>Despeses de Difícil Justificació (5%)</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.grossRevenue">
+      <segment state="translated">
+        <source>Facturación Bruta</source>
+        <target>Facturació Bruta</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.lowIncome">
+      <segment state="translated">
+        <source>Reducción de Contribuyentes Bajos</source>
+        <target>Reducció de Contribuents Baixos</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.taxableBase">
+      <segment state="translated">
+        <source>Base Liquidable</source>
+        <target>Base Liquidable</target>
+      </segment>
+    </unit>
+    <unit id="results.breakdown.title">
+      <segment state="translated">
+        <source>Desglose de Base Liquidable</source>
+        <target>Desglossament de Base Liquidable</target>
+      </segment>
+    </unit>
+    <unit id="results.consolidated.subtitle">
+      <segment state="translated">
+        <source>Suma de tipos Estatal + Autonómico para cada tramo.</source>
+        <target>Suma de tipus Estatal + Autonòmic per a cada tram.</target>
+      </segment>
+    </unit>
+    <unit id="results.consolidated.title">
+      <segment state="translated">
+        <source>Tramos IRPF Consolidados</source>
+        <target>Trams IRPF Consolidats</target>
+      </segment>
+    </unit>
+    <unit id="results.effectiveRate.label">
+      <segment state="translated">
+        <source>Tipo Medio: </source>
+        <target>Tipus Mitjà: </target>
+      </segment>
+    </unit>
+    <unit id="results.finalResult">
+      <segment state="translated">
+        <source> Resultado Final </source>
+        <target> Resultat Final </target>
+      </segment>
+    </unit>
+    <unit id="results.marginal.text">
+      <segment state="translated">
+        <source>El Tipo Marginal (máximo que pagas) es del</source>
+        <target>El Tipus Marginal (màxim que pagues) és del</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.health">
+      <segment state="translated">
+        <source>Reducción Seguro Médico</source>
+        <target>Reducció Assegurança Mèdica</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.ngo">
+      <segment state="translated">
+        <source>Deducción Donaciones</source>
+        <target>Deducció Donacions</target>
+      </segment>
+    </unit>
+    <unit id="results.reduction.pension">
+      <segment state="translated">
+        <source>Reducción Plan Pensiones</source>
+        <target>Reducció Pla Pensions</target>
+      </segment>
+    </unit>
+    <unit id="results.regional.subtitle">
+      <segment state="translated">
+        <source>Escala de la comunidad seleccionada.</source>
+        <target>Escala de la comunitat seleccionada.</target>
+      </segment>
+    </unit>
+    <unit id="results.regional.title">
+      <segment state="translated">
+        <source>Tramo Autonómico</source>
+        <target>Tram Autonòmic</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.annualQuota">
+      <segment state="translated">
+        <source>Cuota Anual</source>
+        <target>Quota Anual</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.brackets.subtitle">
+      <segment state="translated">
+        <source>Cuotas según rendimientos netos mensuales.</source>
+        <target>Quotes segons rendiments nets mensuals.</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.brackets.title">
+      <segment state="translated">
+        <source>Tramos de Cotización RETA 2025</source>
+        <target>Trams de Cotització RETA 2025</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.overpaying.detail">
+      <segment state="translated">
+        <source> Estás cotizando por encima del mínimo obligatorio. Esto es voluntario y mejora tus prestaciones futuras. </source>
+        <target> Estàs cotitzant per sobre del mínim obligatori. Això és voluntari i millora les teves prestacions futures. </target>
+      </segment>
+    </unit>
+    <unit id="results.ss.retaRate">
+      <segment state="translated">
+        <source>Tipo Cotización</source>
+        <target>Tipus Cotització</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.correct">
+      <segment state="translated">
+        <source>CUOTA CORRECTA</source>
+        <target>QUOTA CORRECTA</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.overpaying">
+      <segment state="translated">
+        <source>APORTACIÓN EXTRA</source>
+        <target>APORTACIÓ EXTRA</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.status.underpaying">
+      <segment state="translated">
+        <source>REGULARIZACIÓN PENDIENTE</source>
+        <target>REGULARITZACIÓ PENDENT</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.bracket">
+      <segment state="translated">
+        <source>Tramo Rendimientos</source>
+        <target>Tram Rendiments</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.contributionBase">
+      <segment state="translated">
+        <source>Base Cotización</source>
+        <target>Base Cotització</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.table.monthlyQuota">
+      <segment state="translated">
+        <source>Cuota Mensual</source>
+        <target>Quota Mensual</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.theoreticalQuota">
+      <segment state="translated">
+        <source>Cuota Teórica</source>
+        <target>Quota Teòrica</target>
+      </segment>
+    </unit>
+    <unit id="results.ss.title">
+      <segment state="translated">
+        <source> Cuota Seguridad Social </source>
+        <target> Quota Seguretat Social </target>
+      </segment>
+    </unit>
+    <unit id="results.ss.underpaying.detail">
+      <segment state="translated">
+        <source> Estás cotizando por debajo de tus ingresos reales. Esto podría generar una regularización posterior de <ph id="0" equiv="INTERPOLATION" disp="{{ Math.abs(res.autonomousQuotaDiff) | appCurrency }}"/> anuales. </source>
+        <target> Estàs cotitzant per sota dels teus ingressos reals. Això podria generar una regularització posterior de <ph id="0" equiv="INTERPOLATION" disp="{{ Math.abs(res.autonomousQuotaDiff) | appCurrency }}"/> anuals. </target>
+      </segment>
+    </unit>
+    <unit id="results.state.subtitle">
+      <segment state="translated">
+        <source>Escala válida para todo el territorio.</source>
+        <target>Escala vàlida per a tot el territori.</target>
+      </segment>
+    </unit>
+    <unit id="results.state.title">
+      <segment state="translated">
+        <source>Tramo Estatal</source>
+        <target>Tram Estatal</target>
+      </segment>
+    </unit>
+    <unit id="results.status.pay">
+      <segment state="translated">
+        <source>A PAGAR</source>
+        <target>A PAGAR</target>
+      </segment>
+    </unit>
+    <unit id="results.status.refund">
+      <segment state="translated">
+        <source>A DEVOLVER</source>
+        <target>A TORNAR</target>
+      </segment>
+    </unit>
+    <unit id="results.tab.global">
+      <segment state="translated">
+        <source> Tabla Global Agregada </source>
+        <target> Taula Global Agregada </target>
+      </segment>
+    </unit>
+    <unit id="results.tab.split">
+      <segment state="translated">
+        <source> Desglose Estatal/Autonómico </source>
+        <target> Desglossament Estatal/Autonòmic </target>
+      </segment>
+    </unit>
+    <unit id="results.table.amount">
+      <segment state="translated">
+        <source>Importe</source>
+        <target>Import</target>
+      </segment>
+    </unit>
+    <unit id="results.table.base">
+      <segment state="translated">
+        <source>Base</source>
+        <target>Base</target>
+      </segment>
+    </unit>
+    <unit id="results.table.baseInBracket">
+      <segment state="translated">
+        <source>Base en Tramo</source>
+        <target>Base en Tram</target>
+      </segment>
+    </unit>
+    <unit id="results.table.bracket">
+      <segment state="translated">
+        <source>Tramo</source>
+        <target>Tram</target>
+      </segment>
+    </unit>
+    <unit id="results.table.bracketRent">
+      <segment state="translated">
+        <source>Tramo de Renta</source>
+        <target>Tram de Renda</target>
+      </segment>
+    </unit>
+    <unit id="results.table.concept">
+      <segment state="translated">
+        <source>Concepto</source>
+        <target>Concepte</target>
+      </segment>
+    </unit>
+    <unit id="results.table.quota">
+      <segment state="translated">
+        <source>Cuota</source>
+        <target>Quota</target>
+      </segment>
+    </unit>
+    <unit id="results.table.type">
+      <segment state="translated">
+        <source>Tipo</source>
+        <target>Tipus</target>
+      </segment>
+    </unit>
+    <unit id="results.table.typeGlobal">
+      <segment state="translated">
+        <source>Tipo Global</source>
+        <target>Tipus Global</target>
+      </segment>
+    </unit>
+    <unit id="results.totalQuota">
+      <segment state="translated">
+        <source>Cuota Total</source>
+        <target>Quota Total</target>
+      </segment>
+    </unit>
+    <unit id="results.withholding.custom">
+      <segment state="translated">
+        <source>Personalizada</source>
+        <target>Personalitzada</target>
+      </segment>
+    </unit>
+    <unit id="results.withholding.label">
+      <segment state="translated">
+        <source>Retenciones</source>
+        <target>Retencions</target>
+      </segment>
+    </unit>
+    <unit id="save.button">
+      <segment state="translated">
+        <source>Guardar</source>
+        <target>Desar</target>
+      </segment>
+    </unit>
+    <unit id="save.placeholder.name">
+      <segment state="translated">
+        <source>Nombre del escenario...</source>
+        <target>Nom de l&apos;escenari...</target>
+      </segment>
+    </unit>
+    <unit id="save.title">
+      <segment state="translated">
+        <source>Guardar Escenario</source>
+        <target>Desar Escenari</target>
+      </segment>
+    </unit>
+    <unit id="stepper.data">
+      <segment state="translated">
+        <source>Datos</source>
+        <target>Dades</target>
+      </segment>
+    </unit>
+    <unit id="stepper.info">
+      <segment state="translated">
+        <source>Info</source>
+        <target>Info</target>
+      </segment>
+    </unit>
+    <unit id="stepper.results">
+      <segment state="translated">
+        <source>Resultados</source>
+        <target>Resultats</target>
+      </segment>
+    </unit>
+    <unit id="toast.close">
+      <segment state="translated">
+        <source>Cerrar notificación</source>
+        <target>Tancar notificació</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
